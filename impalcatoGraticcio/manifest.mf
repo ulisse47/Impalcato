@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+OpenIDE-Module: it.ccprogetti.impalcatoGraticcio/1
+OpenIDE-Module-Install: it/ccprogetti/impalcatoGraticcio/nb/installer/Installer.class
+OpenIDE-Module-Layer: it/ccprogetti/impalcatoGraticcio/layer.xml
+OpenIDE-Module-Localizing-Bundle: it/ccprogetti/impalcatoGraticcio/Bundle.properties
+OpenIDE-Module-Requires: org.netbeans.api.javahelp.Help
+OpenIDE-Module-Specification-Version: 2.0
+

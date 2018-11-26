@@ -1,0 +1,1022 @@
+package cassone.util;
+
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+
+import cassone.calcolo.Common;
+import cassone.calcolo.ConcioUtil;
+
+import com.lowagie.text.BadElementException;
+import com.lowagie.text.Cell;
+import com.lowagie.text.Document;
+import com.lowagie.text.Element;
+import com.lowagie.text.Font;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.Table;
+import com.lowagie.text.rtf.RtfWriter;
+
+public class RTFCreatorTensioni {
+
+  /**
+   * il titolo di ogni tabella
+   */
+  private static Font fontTitleTable = new Font(Font.COURIER, 12,
+                                                Font.NORMAL);
+
+  private static Font fontCell = new Font(Font.COURIER, 6,
+                                          Font.NORMAL);
+
+  private static NumberFormat nf;
+  private static DecimalFormat df = new DecimalFormat( "##0.##E0" );
+
+  static {
+    nf = NumberFormat.getInstance();
+    nf.setMaximumFractionDigits(2);
+  }
+
+  private Font cellFont = new Font(Font.HELVETICA, 12, Font.HELVETICA);
+
+  public static String NEW_LINE = "\n";
+
+  
+  private static Table writeTableCombo() throws BadElementException{
+	  	Table tab = new Table( Common.ncond + 1,2 + Common.ncomb );
+	    tab.setPadding(2);
+	    tab.setSpacing(2);
+	    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);  
+	    
+	    //colonna condizione header
+	    Cell cl = new Cell( "Condizione" );
+ 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+ 	    tab.addCell(cl, 0, 0);
+ 	    //colonna condizione
+ 	    for (int i = 1; i < Common.ncond + 1; i++) {
+	    	cl = new Cell( String.valueOf( i ) );
+	 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	 	    tab.addCell(cl, 0, i);
+		}
+ 	    
+ 	    //colonna descrizione header
+	    cl = new Cell( "Descrizione" );
+ 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+ 	    tab.addCell(cl, 1, 0);
+ 	    //colonna descrizione
+ 	    for (int i = 1; i < Common.ncond + 1; i++) {
+	    	cl = new Cell( Common.desc_cond[i-1]  );
+	 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	 	    tab.addCell(cl, 1, i);
+		}
+ 	    
+ 	   //combinazioni header
+	    for (int j = 0; j < Common.ncomb; j++) {
+			cl = new Cell( "Combinazione" + (j+1) );
+	 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	 	    tab.addCell(cl, 2+j, 0);
+	   
+	 	    //combinazioni
+	 	    for (int i = 1; i < Common.ncond + 1; i++) {
+		    	cl = new Cell( nf.format( Common.comb[i-1][ j ] ) );
+		 	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+		 	    tab.addCell(cl, 2+j, i);
+			}
+ 	    
+	    } 
+ 	    	    
+	    return tab;
+  }
+  
+ private static Table writeTableSollecitazioniCombinate(int sezione) throws BadElementException{
+	  
+	  Table tab = new Table( 6, Common.ncomb*4 );
+	    tab.setPadding(2);
+	    tab.setSpacing(2);
+	    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+	    
+	    //header
+	    Cell cl = new Cell("Combinazione");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 0);
+	    
+	    cl = new Cell("FASE");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 1);
+	    
+	    cl = new Cell("N (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 2);
+	    
+	    cl = new Cell("V (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 3);
+	    
+	    cl = new Cell("M (kNm)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 4);
+
+	    cl = new Cell("Nsol. (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 5);
+	    
+	    
+	    for(int i =0;i<Common.ncomb;++i){
+	    	double [][]S=ConcioUtil.calcolaAzioniFasi(sezione);
+	    	
+	    	for (int k=0;k<4;++k){
+	    		String str="Combinazione " + String.valueOf(i+1);
+	    		if (k!=0) str="";
+		    	cl = new Cell(str);
+		        tab.addCell(cl, i*4+1+k, 0);
+	    		
+		        //fase
+		        cl = new Cell("FASE " + String.valueOf(k));
+		        tab.addCell(cl, i*4+1+k, 1);
+	    		
+		        //N
+		        cl = new Cell(df.format(S[0][k]));
+		        tab.addCell(cl, i*4+1+k, 2);
+
+		        //V
+		        cl = new Cell(df.format(S[1][k]));
+		        tab.addCell(cl, i*4+1+k, 3);
+		        //M
+		        cl = new Cell(df.format(S[2][k]));
+		        tab.addCell(cl, i*4+1+k, 4);
+		        //Ns
+		        cl = new Cell(df.format(S[3][k]));
+		        tab.addCell(cl, i*4+1+k, 5);
+
+	    	}
+	   
+	    }
+	    
+	    
+return tab;	  
+  }
+
+ private static Table writeTableTensioni(int sezione) throws BadElementException{
+	  
+	 Table tab = new Table( 12, Common.ncomb+1 );
+	    tab.setPadding(2);
+	    tab.setSpacing(2);
+	    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+	    
+	    //header
+	    Cell cl = new Cell("Combinazioni");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 0);
+	    
+	    cl = new Cell("Sc");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 1);
+
+	    cl = new Cell("Sf");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 2);
+	    cl = new Cell("Sss");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 3);
+
+	    cl = new Cell("SS");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 4);
+
+	    cl = new Cell("Si");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 5);
+
+	    cl = new Cell("Sii");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 6);
+
+	    cl = new Cell("ts");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 7);
+
+	    cl = new Cell("ti");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 8);
+
+	    cl = new Cell("Sid1");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 9);
+
+	    cl = new Cell("Sid2");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 10);
+
+	    cl = new Cell("Fs");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 11);
+
+	    
+	    for (int i=0;i<Common.ncomb;++i){
+		    cl = new Cell("Combinazione " + String.valueOf(i+1));
+		    tab.addCell(cl, i+1, 0);
+	    	for(int j=1;j<12;++j){
+		        cl = new Cell(nf.format(Common.tensioni[sezione][i][j]));
+	        	tab.addCell(cl, i+1, j);
+	    	}
+	    }
+	    
+	    
+	    return tab;
+ }
+  
+ 
+ 
+  private static Table writeTableSollecitazioni(int sezione) throws BadElementException{
+	  
+	  Table tab = new Table( 6, Common.ncond );
+	    tab.setPadding(2);
+	    tab.setSpacing(2);
+	    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+	    
+	    //header
+	    Cell cl = new Cell("Condizione");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 0);
+	    
+	    cl = new Cell("FASE");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 1);
+	    
+	    cl = new Cell("N (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 2);
+	    
+	    cl = new Cell("V (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 3);
+	    
+	    cl = new Cell("M (kNm)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 4);
+
+	    cl = new Cell("Nsol. (kN)");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 5);
+	    
+	    
+	    for(int i =0;i<Common.ncond;++i){
+	    	cl = new Cell(String.valueOf(i+1));
+	        tab.addCell(cl, i+1, 0);
+	    	
+	        //fase
+	        int nIt = (int) (Common.sol[sezione][i][4]) - 1;
+	        cl = new Cell("FASE " + String.valueOf(nIt));
+	        tab.addCell(cl, i+1, 1);
+	    	
+	        //N
+	        cl = new Cell(df.format(Common.sol[sezione][i][0]));
+	        tab.addCell(cl, i+1, 2);
+		    
+	        //V
+	        cl = new Cell(df.format(Common.sol[sezione][i][1]));
+	        tab.addCell(cl, i+1, 3);
+	        
+	        //M
+	        cl = new Cell(df.format(Common.sol[sezione][i][2]));
+	        tab.addCell(cl, i+1, 4);
+
+	        //Nsol
+	        cl = new Cell(df.format(Common.sol[sezione][i][3]));
+	        tab.addCell(cl, i+1, 5);
+
+	    }
+	    
+	    
+return tab;	  
+  }
+  
+  
+  public static Document creaRTFDocument(/*String fileName, */Document document) throws Exception {
+    // step 1: creation of a document-object
+   // Document document = new Document();
+
+    //RtfWriter.getInstance(document, new FileOutputStream(fileName));
+    
+    NumberFormat nf = NumberFormat.getInstance();
+    nf.setMaximumFractionDigits(2);
+
+    //document.open();
+
+    //document.setMargins(40, 40, 40, 40);
+
+    /*Paragraph par1 =
+        new Paragraph("TITOLO DELL'OPERA: " + Common.nome.toUpperCase(),
+                      new Font(Font.HELVETICA, 16, Font.BOLD));
+    document.add(par1);*/
+
+    document.add(new Phrase(NEW_LINE));
+
+    Paragraph par = new Paragraph("VERIFICA DELLE SEZIONI",
+                                  new Font(Font.TIMES_ROMAN, 14,Font.BOLD));
+    document.add(par);
+
+    document.add(new Phrase(NEW_LINE));
+
+    par = new Paragraph("DESCRIZIONE DELLE SEZIONI",
+            new Font(Font.TIMES_ROMAN, 12));
+    document.add(par);
+
+document.add(new Phrase(NEW_LINE));
+
+    
+    Table tab = new Table(4, Common.sezioni + 1);
+    tab.setPadding(2);
+    tab.setSpacing(2);
+    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+    nf.setMinimumFractionDigits(2);
+
+    //N sezioni
+    addNameColumn(tab);
+
+    //ASCISSA
+    addAscissa(tab);
+
+    //n. concio
+    addNConcio(tab);
+
+    //linghezza coll.
+    addLunghezzaCol(tab);
+
+    //linghezza coll. per ritiro
+    //addLunghezzaCol2(tab);
+    document.add(tab);
+    
+    
+    //combinazioni
+    par = new Paragraph("COMBINAZIONI DI CARICO\n",
+                        new Font(Font.TIMES_ROMAN, 10));
+    document.add(par);
+    document.add( writeTableCombo() );
+
+    //carratteristiche inerziali sez verifica
+    for (int i = 0; i < Common.sezioni; i++) {
+
+      if (i != 0) {
+        //document.newPage();
+      }
+
+      writeTitoloSezione(i, document);
+      document.add(new Phrase(NEW_LINE));
+      document.add(writeGeomSez(i));
+
+//    sollecitazioni
+      par = new Paragraph("Sollecitazioni\n",
+              new Font(Font.TIMES_ROMAN, 10));
+      document.add(par);
+     
+      Table tabSol = writeTableSollecitazioni(i);
+      document.add(tabSol);
+      
+//    sollecitazioni combinate
+      par = new Paragraph("Sollecitazioni combinate\n",
+              new Font(Font.TIMES_ROMAN, 10));
+      document.add(par);
+     
+      Table tabSolComb = writeTableSollecitazioniCombinate(i);
+      document.add(tabSolComb);
+     
+//    Temsioni
+      par = new Paragraph("Tensioni\n",
+              new Font(Font.TIMES_ROMAN, 10));
+      document.add(par);
+     
+      Table tabSolTensioni = writeTableTensioni(i);
+      document.add(tabSolTensioni);
+           
+    }
+    
+    
+    
+    
+/*
+    document.newPage();
+    //parametri sollecitazione sezione
+    par = new Paragraph("CALCOLO DELLE TENSIONI\n",
+                        new Font(Font.TIMES_ROMAN, 10));
+    document.add(par);
+
+    //aggiungo testo copiato da tensioni.txt
+    writeSimbologia( document );
+
+    //carratteristiche inerziali sez verifica
+    for (int i = 0; i < Common.sezioni; i++) {
+
+      writeTitoloSezioneTens(i, document);
+      document.add(writeParamTensioni(i));
+
+      //tensioni risultanti
+      par = new Paragraph("TENSIONI RISULTANTI\n",
+                          new Font(Font.TIMES_ROMAN, 10));
+      document.add(par);
+      document.add(writeTensioni(i));
+
+      //tensioni ideali
+      par = new Paragraph("TENSIONI IDEALI\n",
+                          new Font(Font.TIMES_ROMAN, 10));
+      document.add(par);
+      document.add(writeTensioniIdeali(i));
+
+    }
+*/
+    
+    
+    //
+
+    //document.close();
+    return document;
+  }
+
+  /**
+   *
+   */
+  public static void writeSimbologia( Document document ) throws
+      Exception {
+
+    InputStream stream = RTFCreator.class.
+        getResourceAsStream( "tensioni.txt" );
+
+    BufferedReader in
+   = new BufferedReader( new InputStreamReader ( stream ) );
+
+    String line;
+    StringBuffer bf = new StringBuffer();
+    while ( ( line = in.readLine()) != null ){
+      bf.append( line );
+      bf.append( "\n" );
+    }
+    in.close();
+    document.add( new Paragraph( bf.toString() ) );
+  }
+
+  /**
+   *
+   * @param sez
+   * @param document
+   * @throws java.lang.Exception
+   */
+  private static void writeTitoloSezione(int sez, Document document) throws
+      Exception {
+
+    Paragraph par = new Paragraph("SEZIONE DI VERIFICA SV" + (sez + 1),
+                                  new Font(Font.TIMES_ROMAN, 10));
+    document.add(par);
+    par = new Paragraph("Caratteristiche inerziali nella verifica delle sezioni.",
+            new Font(Font.TIMES_ROMAN, 10));
+    
+    document.add(par);
+  }
+
+  private static void writeTitoloSezioneTens(int sez, Document document) throws
+      Exception {
+
+    Paragraph par = new Paragraph("PRAMETRI DI SOLLECITAZIONE - SEZIONE N. " +
+                                  ( sez  + 1 ) + "  X=" +
+                                  nf.format(Common.sez[sez][0] + 1) + " m \n",
+                                  new Font(Font.TIMES_ROMAN, 10));
+    document.add(par);
+
+  }
+
+  /**
+   *
+   * @param i
+   * @throws java.lang.Exception
+   */
+  private static Table writeParamTensioni(int i) throws Exception {
+
+    Phrase pr;
+    Table tab = new Table(6, Common.ncond);
+    tab.setPadding(2);
+    tab.setSpacing(2);
+    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+    nf.setMinimumFractionDigits(2);
+
+    addCond_param(tab);
+       
+    addN(tab, i);
+    addV(tab, i);//V
+    addM(tab, i);//M
+    addNs(tab, i);//Ns
+    //addMt(tab, i);
+    addN_omg(tab, i);
+
+    return tab;
+
+  }
+
+  /**
+   *
+   * @param i
+   * @throws java.lang.Exception
+   */
+  private static Table writeTensioni(int i) throws Exception {
+
+    Phrase pr;
+
+    Table tab = new Table( 12, /*Common.ncond +*/ Common.ncomb );
+    tab.setPadding(2);
+    tab.setSpacing(2);
+    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+
+    addCond(tab);
+    addCondId(tab);
+    addTens(tab, i);
+    addNomiTens(tab);
+    return tab;
+
+  }
+
+  /**
+   *
+   * @param i
+   * @throws java.lang.Exception
+   */
+  private static Table writeTensioniIdeali(int i) throws Exception {
+
+    Table tab = new Table(1 + Common.ncomb, 11);
+    tab.setPadding(2);
+    tab.setSpacing(2);
+    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+
+    addTensIdeali(tab, i);
+    addNomiTensIdeali(tab);
+    addHeader(tab);
+    return tab;
+
+  }
+
+  private static void addHeader(Table tab) throws
+      Exception {
+    addCell("", 0, 0, tab);
+    for ( int i = 0; i < Common.ncomb; i++ ){
+      addCell("Comb." + ( i + 1 ), 0, i + 1, tab);
+      //addCell("Cond. I", 0, 2, tab);
+    }
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws java.lang.Exception
+   */
+  private static void addNomiTensIdeali(Table tab) throws
+      Exception {
+
+    addCell("Sigma-c", 1, 0, tab);
+    addCell("Sigma-a", 2, 0, tab);
+    addCell("Sigma-3", 3, 0, tab);
+    addCell("Sigma-i4", 4, 0, tab);
+    addCell("Sigma-e4", 5, 0, tab);
+    addCell("Sigma-i5", 6, 0, tab);
+    addCell("Sigma-e5", 7, 0, tab);
+    addCell("Sigma-6", 8, 0, tab);
+    addCell("Sigma-im", 9, 0, tab);
+    addCell("Sigma-em", 10, 0, tab);
+  }
+
+  private static void addNomiTens(Table tab) throws
+      Exception {
+	  
+	  /*
+	   * "Sc", "Sf", "Sss", "Ss", "Si", "Sii", "ts", "ti","sid1","sid2",
+        "Fe"};
+	   * */
+
+    addCell("Sc", 1, tab);
+    addCell("Sf", 2, tab);
+    addCell("Sss", 3, tab);
+    addCell("Ss", 4, tab);
+    addCell("Si", 5, tab);
+    addCell("Sii", 6, tab);
+    addCell("ts", 7, tab);
+    addCell("ti", 8, tab);
+    addCell("sid1", 9, tab);
+    addCell("sid2", 10, tab);
+    addCell("Fe", 11, tab);
+    
+  }
+
+  /**
+   *
+   * @param name
+   * @param col
+   * @param tab
+   *
+   * @throws java.lang.Exception
+   */
+  private static void addCell(String name, int col, Table tab) throws
+      Exception {
+    Cell cl = new Cell(name);
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, col);
+  }
+
+  private static void addCell(String name, int row, int col, Table tab) throws
+      Exception {
+    Cell cl = new Cell(name);
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, row, col);
+  }
+
+  /**
+   *
+   * @param tab
+   * @param sez
+   * @throws java.lang.Exception
+   */
+  private static void addTens(Table tab, int sez) throws
+      Exception {
+    nf.setMaximumFractionDigits(0);
+    Cell cl;
+    for (int i = 0; i < /*Common.ncond +*/ Common.ncomb; i++) {
+      for (int column = 1; column < 12; column++) {
+        cl = new Cell(nf.format(Common.tensioni[sez][i][column]));
+        cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        tab.addCell(cl, i + 1, column);
+      }
+    }
+  }
+
+  /**
+   *
+   * @param tab
+   * @param sez
+   * @throws java.lang.Exception
+   */
+  private static void addTensIdeali(Table tab, int sez) throws
+      Exception {
+    nf.setMaximumFractionDigits(0);
+    Cell cl;
+    for (int i = 0; i < Common.tensioni_ideali[sez].length; i++) {
+      for (int column = 0; column < Common.ncomb; column++) {
+        cl = new Cell(nf.format(Common.tensioni_ideali[sez][i][column]));
+        cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        tab.addCell(cl, i + 1, column + 1);
+      }
+    }
+  }
+
+  
+  
+  /**
+   *
+   * @param sez
+   * @throws java.lang.Exception
+   */
+  private static Table writeGeomSez(int sez) throws Exception {
+
+    int nc = (int) ConcioUtil.sez[sez][1];
+    int n = 0;
+    Phrase pr;
+
+    Table tab = new Table(8/*9*/,13);
+    tab.setPadding(2);
+    tab.setSpacing(2);
+    tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+    nf.setMinimumFractionDigits(2);
+
+    String n_str = "";
+
+   
+    
+    Cell cl = new Cell("" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+
+    cl = new Cell( "Aid" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 1, n);
+
+    cl = new Cell( "Jid" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 2, n);
+
+    cl = new Cell( "Yg" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 3, n);
+    
+    cl = new Cell( "Wc" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 4, n);
+
+    cl = new Cell( "Wf" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 5, n);
+
+    cl = new Cell( "Wss" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 6, n);
+    
+    cl = new Cell( "Ws" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 7, n);
+
+    cl = new Cell( "Wi" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 8, n);
+
+    cl = new Cell( "Wii" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 9, n);
+    
+    cl = new Cell( "Ss" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 10, n);
+
+    cl = new Cell( "Si" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 11, n);
+
+    cl = new Cell( "Sfs" );
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 12, n);
+    
+     
+    
+    
+    //Momenti positivi
+	for(int fase =0;fase <4;++fase){
+	    cl = new Cell("FASE"+fase+"\nMomenti positivi");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, fase+1);
+		double []v = ConcioUtil.getParametriStatici(Common.sez[sez][2], fase,(int)Common.sez[sez][1], true);
+    for (int i =0; i <12;++i){
+        cl = new Cell(df.format(v[i]));
+        cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        tab.addCell(cl, 1+i, fase+1);
+    	}
+    }
+
+    //Momenti negativi
+	for(int fase =1;fase <4;++fase){
+	    cl = new Cell("FASE"+fase+"\nMomenti negativi");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, 4+fase);
+		double []v = ConcioUtil.getParametriStatici(Common.sez[sez][2], fase,(int)Common.sez[sez][1], false);
+    for (int i =0; i <12;++i){
+        cl = new Cell(df.format(v[i]));
+        cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        tab.addCell(cl, 1+i, 4+fase);
+    	}
+    }
+
+   
+    return tab;
+
+  }
+
+  private static void addLunghezzaCol(Table tab) throws Exception {
+    int n = 3;
+    nf.setMaximumFractionDigits(2);
+    nf.setMinimumFractionDigits(2);
+    Cell cl;
+    cl = new Cell("larghezza coll. (cm)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.sezioni; i++) {
+      cl = new Cell(nf.format(Common.sez[i][2]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws Exception
+   */
+  private static void addLunghezzaCol2(Table tab) throws Exception {
+    int n = 4;
+    nf.setMaximumFractionDigits(2);
+    nf.setMinimumFractionDigits(2);
+    Cell cl;
+    cl = new Cell("larghezza coll. per ritiro (cm)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.sezioni; i++) {
+      cl = new Cell(nf.format(Common.sez[i][3]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws Exception
+   */
+  private static void addN(Table tab, int sez) throws Exception {
+    int n = 1;
+    nf.setMaximumFractionDigits(2);
+    Cell cl;
+    cl = new Cell("N(kg)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][0]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws Exception
+   */
+  private static void addNConcio(Table tab) throws Exception {
+    int n = 2;
+    nf.setMaximumFractionDigits(0);
+    Cell cl;
+    cl = new Cell("n. concio");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.sezioni; i++) {
+      cl = new Cell("S" + nf.format(Common.sez[i][1] + 1));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws Exception
+   */
+  private static void addNameColumn(Table tab) throws Exception {
+
+    int n = 0;
+    String n_str = "";
+
+    Cell cl;
+    cl = new Cell("N.");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 1; i <= Common.sezioni; i++) {
+      cl = new Cell(String.valueOf("SV"+ i));
+      cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+      tab.addCell(cl, i, n);
+    }
+  }
+
+  private static void addAscissa(Table tab) throws Exception {
+    nf.setMaximumFractionDigits(2);
+    nf.setMinimumFractionDigits(2);
+    int n = 1;
+    Cell cl;
+    cl = new Cell("ascissa (m)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.sezioni; i++) {
+      cl = new Cell(nf.format(Common.sez[i][0]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+  }
+
+  private static void addV(Table tab, int sez) throws Exception {
+    nf.setMaximumFractionDigits(2);
+    int n = 2;
+    Cell cl;
+    cl = new Cell("V(kg)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][1]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  private static void addM(Table tab, int sez) throws Exception {
+    nf.setMaximumFractionDigits(2);
+    int n = 3;
+    Cell cl;
+    cl = new Cell("M(kg*cm)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][2]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  private static void addNs(Table tab, int sez) throws Exception {
+    nf.setMaximumFractionDigits(2);
+    int n = 4;
+    Cell cl;
+    cl = new Cell("Ns(kg*cm)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][3]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  private static void addMt(Table tab, int sez) throws Exception {
+    nf.setMaximumFractionDigits(2);
+    int n = 5;
+    Cell cl;
+    cl = new Cell("Mt(kg*cm)");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][4]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  private static void addN_omg(Table tab, int sez) throws Exception {
+    nf.setMaximumFractionDigits(0);
+    int n = 5;
+    Cell cl;
+    cl = new Cell("n");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    for (int i = 0; i < Common.ncond; i++) {
+      cl = new Cell(nf.format(Common.sol[sez][i][4]));
+      cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+      tab.addCell(cl, i + 1, n);
+    }
+
+  }
+
+  /**
+   *
+   * @param tab
+   * @throws java.lang.Exception
+   */
+  private static void addCondId(Table tab) throws Exception {
+    int n = 0;
+   /* Cell cl, cl1;
+    cl = new Cell("C. I");
+    cl1 = new Cell("C. II");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);*/
+
+    for ( int i = 1; i <= Common.ncomb; i++ ){
+      tab.addCell( new Cell("Combinazione " + i ) , /*Common.ncond +*/ i, n);
+      //tab.addCell(cl1, Common.ncond + 1, n);
+    }
+  }
+  
+  
+  private static void addCond_param(Table tab) throws Exception {
+
+	    int n = 0;
+	    Cell cl;
+	    cl = new Cell("Condizione");
+	    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	    tab.addCell(cl, 0, n);
+
+	    for (int i = 1; i <= Common.ncond; i++) {
+	      cl = new Cell(String.valueOf(i));
+	      cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+	      tab.addCell(cl, i, n);
+	    }
+	  }
+
+  private static void addCond(Table tab) throws Exception {
+
+    int n = 0;
+    Cell cl;
+    cl = new Cell("Combinazione");
+    cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+    tab.addCell(cl, 0, n);
+
+    /*for (int i = 1; i <= Common.ncomb; i++) {
+      cl = new Cell(String.valueOf(i));
+      cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+      tab.addCell(cl, i, n);
+    }*/
+  }
+
+}

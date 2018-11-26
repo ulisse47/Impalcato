@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- ==================================================== -->
+<!-- Build file for our first web application -->
+<!-- build.xml, Saturday, July 20, 2002 -->
+<!-- Author: Deepak Kumar -->
+<!-- Email : deepak@roseindia.net -->
+<!-- Url : http://www.roseindia.net -->
+<!-- ==================================================== -->
+
+
+<project name="build" default="run" basedir="..">
+
+    <!-- Main target -->
+    <target name="all" depends="init,clean,buildJar"/>
+		
+
+    <target name="init">
+        <property name="dirs.base" value="${basedir}"/>
+        <property name="classdir" value="${dirs.base}/build"/>
+        <property name="src" value="${dirs.base}/src"/>
+        <property name="jarFile" value="astroTravi.jar"/>
+        <property name="jarDir" value="${dirs.base}/build"/>
+    	 <property name="lib" value="${dirs.base}/lib"/>
+    	<property name="src" value="${dirs.base}/src"/>
+    </target>
+	
+  	<!-- classpath -->
+    <path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" ></include>			
+		</fileset>        
+  	</path>
+	
+	
+    <target name="clean" depends="init">
+	  	<delete failonerror="false">
+    	    <fileset dir="${basedir}\build"  >  
+    	    	<include name="**\**" />
+    	    </fileset>
+    	</delete>
+    	<mkdir dir="${basedir}\build"/>
+	</target>
+	
+	<target name="compile" depends="clean">
+		<javac fork="true" srcdir="${src}" encoding="utf-8" includes="cassone/**" destdir="${classdir}" debug="true" >
+			<classpath refid="compile.classpath" ></classpath>
+		</javac>
+	</target>	    
+
+    <!-- Create the jar File -->
+    <target name="buildJar" depends="compile">
+        <!-- Create jar file and place in ear directory -->
+        <jar jarfile="${dirs.base}/dist/impalcatograticciosuite/impalcatograticciosuite/modules/it-ccprogetti-impalcatoGraticcio.jar" 
+        	update="true" includes="**/**"
+        basedir="${dirs.base}/build"/>
+    </target>
+	
+	<target name="run" depends="buildJar">
+	<exec executable="${dirs.base}/dist/impalcatograticciosuite/bin/impalcatograticciosuite_w.exe"></exec>
+	</target>
+		
+
+   
+</project>

@@ -1,0 +1,40 @@
+package cassone.util;
+
+import java.io.FileOutputStream;
+import java.text.NumberFormat;
+
+import cassone.calcolo.Common;
+
+import com.lowagie.text.Cell;
+import com.lowagie.text.Document;
+import com.lowagie.text.Element;
+import com.lowagie.text.Font;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.Table;
+import com.lowagie.text.rtf.RtfWriter;
+
+public class MainRTFCreator {
+
+
+	public static Document creaRTFDocument(String fileName) throws Exception {
+	    // step 1: creation of a document-object
+	   Document document = new Document();
+
+	    RtfWriter.getInstance(document, new FileOutputStream(fileName));
+	    document.open();
+	    document.setMargins(40, 40, 40, 40);
+	    
+	    
+	    //main
+	    RTFCreator.creaRTFDocument(/*fileName,*/ document);	    
+	    RTFCreatorTensioni.creaRTFDocument(/*fileName,*/ document);
+	    
+	    document.close();
+
+	    return document;
+	  }
+	
+	
+
+}

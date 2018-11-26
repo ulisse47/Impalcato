@@ -1,0 +1,294 @@
+package cassone.util;
+
+import java.io.FileOutputStream;
+import java.text.NumberFormat;
+
+import cassone.calcolo.Common;
+import cassone.calcolo.ConcioUtil;
+
+import com.lowagie.text.Cell;
+import com.lowagie.text.Document;
+import com.lowagie.text.Element;
+import com.lowagie.text.Font;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.Table;
+import com.lowagie.text.rtf.RtfWriter;
+
+public class RTFCreator {
+
+  /**
+   * il titolo di ogni tabella
+   */
+  private static Font fontTitleTable = new Font(Font.COURIER, 12,
+                                                Font.NORMAL);
+
+  private static NumberFormat nf;
+
+  static {
+    nf = NumberFormat.getInstance();
+    nf.setMaximumFractionDigits(2);
+  }
+
+  private Font cellFont = new Font(Font.HELVETICA, 12, Font.HELVETICA);
+
+  public static String NEW_LINE = "\n";
+
+  /**
+   * @param document
+   * @throws java.lang.Exception
+   */
+  private static void writeGeometria(Document document, int nc) throws
+      Exception {
+
+	/*  
+	  //ConcioUtil.elabora();	  
+	  
+    Paragraph par1 =
+        new Paragraph("Geometria",
+        		new Font(Font.TIMES_ROMAN, 12));
+    
+    document.add(par1);
+    document.add(new Phrase(NEW_LINE));
+
+    Table table = new Table(2, 9);
+    table.setPadding(2);
+    table.setSpacing(2);
+    table.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+
+    nf.setMinimumFractionDigits( 2 );
+
+    Cell c = new Cell("Larghezza collaborante soletta: B(mm)");
+    c.setHorizontalAlignment(Element.ALIGN_RIGHT);
+    table.addCell(c, 0, 0);
+    c = new Cell(nf.format(Common.B[nc]));
+    table.addCell(c, 0, 1);
+
+    c = new Cell("Spessore soletta: H (mm)");
+    table.addCell(c, 1, 0);
+    c = new Cell(nf.format(Common.H[nc]));
+    table.addCell(c, 1, 1);
+
+    c = new Cell("Larghezza ala superiore trave in acciaio: bs (mm)");
+    table.addCell(c, 2, 0);
+    c = new Cell(nf.format(Common.hs[nc]));
+    table.addCell(c, 2, 1);
+
+    c = new Cell("Spessore ala superiore in acciaio: hs(mm)");
+    table.addCell(c, 3, 0);
+    c = new Cell(nf.format(Common.hs[nc]));
+    table.addCell(c, 3, 1);
+
+    c = new Cell("Altezza anima trave: ha (mm)");
+    table.addCell(c, 4, 0);
+    c = new Cell(nf.format(Common.ha[nc]));
+    table.addCell(c, 4, 1);
+
+    c = new Cell("Spessore anima trave: ba (mm)");
+    table.addCell(c, 5, 0);
+    c = new Cell(nf.format(Common.ba[nc]));
+    table.addCell(c, 5, 1);
+
+    c = new Cell("Larghezza ala inferiore: bi (mm)");
+    table.addCell(c, 6, 0);
+    c = new Cell(nf.format(Common.bi[nc]));
+    table.addCell(c, 6, 1);
+
+    c = new Cell("Spessore ala inferiore: hi(mm)");
+    table.addCell(c, 7, 0);
+    c = new Cell(nf.format(Common.hi[nc]));
+    table.addCell(c, 7, 1);
+
+    c = new Cell("Area barre in acciaio: Af (mm²)");
+    table.addCell(c, 8, 0);
+    c = new Cell(nf.format(Common.Af[nc]));
+    table.addCell(c, 8, 1);*/
+
+ /*   c = new Cell(
+        "Inclin. esterna dell'anima rispetto alla verticale (alfa)(deg)");
+    table.addCell(c, 9, 0);
+    c = new Cell(nf.format(Common.alfa[nc]));
+    table.addCell(c, 9, 1);
+
+    c = new Cell("Larghezza piattabanda inferiore (b3)(cm)");
+    table.addCell(c, 10, 0);
+    c = new Cell(nf.format(Common.b3[nc]));
+    table.addCell(c, 10, 1);
+
+    c = new Cell("Spessore piattabanda inferiore (s3)(cm)");
+    table.addCell(c, 11, 0);
+    c = new Cell(nf.format(Common.s3[nc]));
+    table.addCell(c, 11, 1);
+
+    c = new Cell("Spessore equiv. controvento superiore (sec)(cm)");
+    table.addCell(c, 12, 0);
+    c = new Cell( nf.format(Common.sec[nc]));
+    table.addCell(c, 12, 1);
+
+    c = new Cell("Area longarina di supporto soletta (al)(cm�)");
+    table.addCell(c, 13, 0);
+    c = new Cell( nf.format(Common.al[nc]));
+    table.addCell(c, 13, 1);
+
+    c = new Cell("Area irrigidimenti anima sul singolo lato (ar)(cm�)");
+    table.addCell(c, 14, 0);
+    c = new Cell( nf.format(Common.ar[nc]));
+    table.addCell(c, 14, 1);
+
+    c = new Cell("Distanza del baricentro dal lembo inferiore irr. (hr)(cm)");
+    table.addCell(c, 15, 0);
+    c = new Cell(nf.format(Common.hr[nc]));
+    table.addCell(c, 15, 1);
+
+    c = new Cell("Area irrigidimenti inferiori (ani)(cm�)");
+    table.addCell(c, 16, 0);
+    c = new Cell(nf.format(Common.ani[nc]));
+    table.addCell(c, 16, 1);
+
+    c = new Cell("Distanza del barricentro dal lembo inferiore irr. (hni)(cm)");
+    table.addCell(c, 17, 0);
+    c = new Cell(nf.format(Common.hni[nc]));
+    table.addCell(c, 17, 1);
+
+    c = new Cell("Eccentricit� irrigidimenti inferiori (xni)(cm)");
+    table.addCell(c, 18, 0);
+    c = new Cell(nf.format(Common.xni[nc]));
+    table.addCell(c, 18, 1);
+
+    c = new Cell("Area complessiva armatura soletta collaborante (asa)(cm�)");
+    table.addCell(c, 19, 0);
+    c = new Cell(nf.format(Common.asa[nc]));
+    table.addCell(c, 19, 1);
+
+    c = new Cell("Distanza del baricentro dal lembo inferiore (hsa)(cm)");
+    table.addCell(c, 20, 0);
+    c = new Cell(nf.format(Common.hsa[nc]));
+    table.addCell(c, 20, 1);
+
+    c = new Cell("Area controsoletta inferiore (acs)(cm�)");
+    table.addCell(c, 21, 0);
+    c = new Cell(nf.format(Common.acs[nc]));
+    table.addCell(c, 21, 1);
+*/
+    document.add(table);
+  }
+
+    
+  
+  public static Document creaRTFDocument(/*String fileName,*/ Document document ) throws Exception {
+    // step 1: creation of a document-object
+   //Document document = new Document();
+
+    //RtfWriter.getInstance(document, new FileOutputStream(fileName));
+    
+    NumberFormat nf = NumberFormat.getInstance();
+    nf.setMaximumFractionDigits(2);
+
+    //document.open();
+
+    //document.setMargins(40, 40, 40, 40);
+
+    Paragraph par1 =
+        new Paragraph("TITOLO DELL'OPERA: " + Common.nome.toUpperCase(),
+                      new Font(Font.HELVETICA, 16, Font.BOLD));
+    document.add(par1);
+
+    document.add(new Phrase(NEW_LINE));
+
+    Paragraph par = new Paragraph("CARATTERISTICHE INERZIALI NEL CALCOLO DELLE SOLLECITAZIONI",
+                                  new Font(Font.TIMES_ROMAN, 14,Font.BOLD));
+    document.add(par);
+
+    //ciclo per i conci
+    for (int nc = 0; nc < Common.nconci; ++nc) {
+      document.add(new Phrase(NEW_LINE));
+
+      par = new Paragraph("SEZIONE S" + Integer.toString(nc + 1),
+                          new Font(Font.TIMES_ROMAN, 12));
+      document.add(par);
+
+      document.add(new Phrase(NEW_LINE));
+
+      ///////////////////////////////
+      writeGeometria( document, nc );
+
+      document.add(new Phrase(NEW_LINE));
+
+      par = new Paragraph("Caratteristiche inerziali",
+                          new Font(Font.TIMES_ROMAN, 12));
+      document.add(new Phrase(NEW_LINE));
+      document.add(par);
+
+
+
+      Table tab = new Table(5, 4);
+      tab.setPadding(2);
+      tab.setSpacing(2);
+      tab.setDefaultHorizontalAlignment(Element.ALIGN_RIGHT);
+      nf.setMinimumFractionDigits( 2 );
+
+      String n_str = "";
+
+      addNameColumn( tab );
+
+      for (int n = 0; n < 4; ++n) {
+
+        if (Common.n[n] == Double.MAX_VALUE) {
+          n_str = "inf.";
+        }
+        else if (Common.n[n] == -Double.MAX_VALUE) {
+          n_str = "-inf.";
+        }
+        else {
+          n_str = nf.format(Common.n[n]);
+        }
+
+        Cell cl = new Cell("n = " + n_str);
+        cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+        tab.addCell(cl, 0, n + 1 );
+
+        cl = new Cell(nf.format(Common.Aid[nc][n]));
+        cl.setHorizontalAlignment(Element.ALIGN_RIGHT);
+        tab.addCell(cl, 1, n + 1);
+
+        cl = new Cell(nf.format(Common.Jid[nc][n]));
+        tab.addCell(cl, 2,n + 1);
+
+        cl = new Cell(nf.format(Common.yg[nc][n]));
+        tab.addCell(cl, 3,n + 1);
+
+      }
+
+      document.add(tab);
+    }
+
+    //document.close();
+
+    return document;
+  }
+
+  public static void addNameColumn( Table tab ) throws Exception{
+
+    int n = 0;
+    String n_str = "";
+
+       Cell cl = new Cell("" );
+       cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+       tab.addCell(cl, 0, n);
+
+
+       cl = new Cell( "Ai(mm²)" );
+       cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+       tab.addCell(cl, 1, n);
+
+       cl = new Cell( "Jid(mm4)" );
+       cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+       tab.addCell(cl, 2, n);
+     
+       cl = new Cell( "Yg(mm)" );
+       cl.setHorizontalAlignment(Element.ALIGN_CENTER);
+       tab.addCell(cl, 3, n);
+
+  }
+
+}

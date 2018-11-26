@@ -1,0 +1,338 @@
+package cassone.model;
+
+import java.util.ArrayList;
+
+import cassone.model.SezioniMetalliche.SezioneMetallicaDoppioT;
+
+public class ParametriStaticiSezioneLoc {
+
+	public int getClasseSezione(Sezione sez, MaterialeAcciaio mat) {
+/*
+		double e = mat.gete();
+		SezioneMetallicaDoppioT concio = (SezioneMetallicaDoppioT)sez.getSezioneMetallica();
+		calcolaM_N_TraveAcciaio(concio);
+		int canima;
+		
+		//anima flessione + azione assilea
+		double ca = concio.getHw() / concio.getTw();
+		//caso sempre tesa
+		if (s<0 && i<0) canima=3;
+		//caso parzialmente compressa
+		double psi;
+		if (s>i) psi = i/s;
+		else psi = s/i;
+		if(psi > -1){
+			if(ca <= 42*e/(0.67+0.33*psi)) canima=3;
+			else canima=4;
+		}else{
+			if(ca <= 62*e*(1-psi)*Math.pow(-psi,0.5)) canima = 3;
+			else canima=4;
+		}
+		
+
+		// piattabande inf
+		double cpi = (concio.getBi() / 2 / concio.getTi());
+		int cinf;
+		if (i < 0)
+			cinf = 3;
+		else {
+			if (cpi < 14 * e)
+				cinf = 3;
+			else
+				cinf = 4;
+		}
+
+		return Math.max(canima, cinf);
+*/
+		return 0;
+	}
+
+	
+	// restituisce il sig critico per la verifica a torsione degli irrigidimenti
+	// longitudinali
+	private double getSigmaCriticoLongStiff(
+			ArrayList<IrrigidimentoLongitudinale> ir, MaterialeAcciaio mat,
+			double passoIrr) {
+
+		double scl = Double.MAX_VALUE;
+		int ni = ir.size();
+
+		for (int i = 0; i < ni; i++) {
+			IrrigidimentoLongitudinale l = ir.get(i);
+			double It = l.getTorsionalConstantSVenant();
+			double Ip = l.getPolarSecondMoment();
+			double Iw = l.getWarpingCostant();
+			double scr = getSigmaCriticoIrrigidimenti(It, Iw, Ip, passoIrr, mat);
+			scl = Math.min(scr, scl);
+		}
+
+		return scl;
+	}
+
+
+	/*private void calcolaRigidezzaIrrigidimentoTrasversale(Sezione sez,
+			MaterialeAcciaio mat) {
+
+		double tw = sez.getConcio().getTw();
+		IrrigidimentoTrasversale it = sez.getIrrigidimetoTrasversale();
+		double tstw = it.getP1().getH();
+		double hst = it.getP1().getB();
+		double tstf = it.getP2().getH();
+		double bst = it.getP2().getB();
+
+		double e = mat.gete();
+
+		Asts = it.getAst() + (2 * 15 * e * tw + tstw) * tw;
+		e1s = ((2 * 15 * e * tw + tstw) * Math.pow(tw, 2) / 2 + hst * tstw
+				* (tw + hst / 2) + bst * tstf * (tw + hst + tstf / 2))
+				/ Asts;
+		e2s = tw + hst + tstf - e1s;
+		Ists = (2 * 15 * e * tw + tstw) * Math.pow(tw, 3) / 12
+				+ Math.pow(hst, 3) * tstf / 12 + bst * Math.pow(tstw, 3)
+				+ (2 * 15 * e * tw + tstf) * tw * Math.pow(e1s - tw / 2, 2)
+				+ hst * tstf * Math.pow(e1s - hst / 2 - tw, 2) + bst * tstf
+				* (e2s - tstf / 2);
+
+	}
+*/
+	public double getAltezzaMinimaCordoniAngolo(MaterialeAcciaio mat, Concio c) {
+		double hw = c.getHw();
+		double tw = c.getTw();
+		double vIIp;
+
+		if (Vconcio < VbwRd) {
+			vIIp = Vconcio / hw;
+		} else {
+			vIIp = mat.getNutaglio() * mat.getFy(tw) * tw
+					/ (Math.pow(3, 0.5) * mat.getGamma1());
+		}
+
+		double azmin = (vIIp * mat.Betaw * mat.gamma2 * Math.pow(3, 0.5))
+				/ (2 * mat.getFu(tw));
+		return azmin;
+	}
+
+/*	private void calcolaSigmaMassimoIrrigidimentoTrasversale(Sezione sez,
+			MaterialeAcciaio mat) {
+
+		double tw = sez.getConcio().getTw();
+		double hw = sez.getConcio().getHw();
+		double passotrasv = sez.getPassoIrrigidimentiTrasv();
+		double Nsted = Math.abs(Vconcio) - hw * tw * mat.getFy(tw)
+				/ (lamdaW * lamdaW * mat.getGamma1() * Math.pow(3, 0.5));
+
+		double f = Math.min(sigcrc / sigcrp, 1);
+		double Ned;
+		if (ss > ii) {
+			// momento positivo
+			Ned = ((ssred + sred) / 2) * Aceff / 2;
+		} else {
+			// momento negativo
+			Ned = ((iired + ired) / 2) * Aceff / 2;
+		}
+		double sigm = f * (Ned * hw) * (1 / passotrasv + 1 / passotrasv);
+		double DN = sigm * hw * hw / Math.pow(3.14, 2);
+		double Ntotsd = DN + Nsted;
+		double Ncrst = (Math.pow(3.14, 2) * mat.getE() * Ists / (hw * hw));
+		double emax = Math.max(e1s, e2s);
+		double e0 = emax - tw / 2;
+		double w0 = Math.min(passotrasv / 300, hw / 300);
+		double qm = Nsted * e0 / (Ntotsd * w0);
+		sigmaxst = Nsted / Asts + (Ntotsd * emax * w0 / Ists)
+				* (1 / (1 - Ntotsd / Ncrst)) * (1 + 1.11 * qm);
+		wst = w0 * (1 / (Ncrst / Ntotsd - 1)) * (1 + 1.25 * qm);
+	}
+*/
+	private double getSigmaCriticoIrrigidimenti(double It, double Iw,
+			double Ip, double a, MaterialeAcciaio mat) {
+		double E = mat.getE();
+		double G = mat.getG();
+
+		return (G * It + Math.pow(Math.PI, 2) * E * Iw / Math.pow(a, 2)) / Ip;
+	}
+
+	// restituisce il sig critico per la verifica a torsione degli irrigidimenti
+	// trasversali
+/*	private double getSigmaCriticoTrasvStiff(Sezione sez, MaterialeAcciaio mat,
+			double passoIrr) {
+
+		double scl = Double.MAX_VALUE;
+
+		IrrigidimentoTrasversale l = sez.getIrrigidimetoTrasversale();
+		double It = l.getTorsionalConstantSVenant();
+		double Ip = l.getPolarSecondMoment();
+		double Iw = l.getWarpingCostant();
+		double scr = getSigmaCriticoIrrigidimenti(It, Iw, Ip, sez.getConcio()
+				.getHw(), mat);
+		scl = Math.min(scr, scl);
+
+		return scl;
+	}
+
+
+	
+	// restituisce il momento resistente della flangie
+	private double getVbfRd(Concio concio, MaterialeAcciaio mat, double passoIrr) {
+
+		double e = mat.gete();
+		double tw = concio.getTw();
+		double hw = concio.getHw();
+		double ts = concio.getTs();
+		double ti= concio.getTi();
+		
+		double bs = Math.min(30 * e * ts + tw, bsred);
+		double as = bs * ts;
+		double bi = Math.min(30 * e * ti + tw, bired);
+		double ai = bi * ti;
+		double hf = hw + ti / 2 + ts / 2;
+		double Mf = 0;
+		double bf = 0, tf = 0;
+		if (as * mat.getFy(ts) / mat.gamma0 < ai * mat.getFy(ti) / mat.gamma0) {
+			Mf = hf * as * mat.getFy(ts) / mat.gamma0;
+			bf = bsred;
+			tf = ts;
+		} else {
+			Mf = hf * ai * mat.getFy(ti) / mat.gamma0;
+			bf = bired;
+			tf = ti;
+		}
+		
+		//momento ridotto per presenza azione assiale
+		if(Nconcio>0){
+			Mf = Mf * (1 - Nconcio / ((as + ai) * mat.getFy(0) / mat.getGamma0()));
+		}
+		
+		double c = passoIrr
+				* (0.25 + (1.6 * bf * tf * tf * mat.getFy(tf) / (tw * hw * hw * mat
+						.getFy(tw))));
+		double Vb = bf * tf * tf * mat.getFy(tf) / (c * mat.getGamma1())
+				* (1 - Math.pow(Mconcio / Mf, 2));
+
+		if (Math.abs(Mf) < Math.abs(Mconcio))
+			return 0;
+		else
+			return Vb;
+
+	}
+
+
+	private double getRocColumnPlateInteraction(double roPlate, double chiColumn) {
+
+		double teta = sigcrp / sigcrc - 1;
+		if (teta < 0)
+			teta = 0;
+		if (teta > 1)
+			teta = 1;
+		return (roPlate - chiColumn) * teta * (2 - teta) + chiColumn;
+
+	}
+
+
+	private double getKsig(double psi, boolean elementoInterno) {
+		if (elementoInterno) {
+			if (psi <= 1 && psi > 0) {
+				return 8.2 / (1.05 + psi);
+			}
+			if (psi <= 0 && psi > -1) {
+				return 7.81 - 6.29 * psi + 9.78 * psi * psi;
+			}
+			if (psi <= -1 && psi > -3) {
+				return 5.98 * (1 - psi) * (1 - psi);
+			}
+			if (psi <=  -3) {
+				return 95.68;
+			}
+			return Double.MAX_VALUE;
+		}
+		if (!elementoInterno) {
+			return 0.0;
+		}
+		return 0.0;
+
+	}
+
+	// trova la posizione dell'asse neutro
+	private double getAsseNeutro(Concio concio) {
+		return concio.getHtot() / (ss - ii) * ss;
+	}
+
+getChiW
+
+
+	private double getFSd_inf(Sezione sez) {
+		GiuntoBullonato giunto = sez.getGiunto();
+		double bi = sez.getConcio().getBi();
+		double ti = sez.getConcio().getTi();
+		
+		int nb = giunto.nfile1Inf*giunto.nfile2Inf*2;
+		double Fs = bi*ti*(ii+i)/2;
+		return Math.abs(Fs/nb);
+	}
+
+	private double getFSd_sup(Sezione sez) {
+		GiuntoBullonato giunto = sez.getGiunto();
+		double bs = sez.getConcio().getBs();
+		double ts = sez.getConcio().getTs();
+		
+		int nb = giunto.nfile1Sup*2*giunto.nfile2Sup;
+		double Fs = bs*ts*(ss+s)/2;
+		return Math.abs(Fs/nb);
+	}
+
+	//sollecitazioni massime bulloni
+	private double getFSd_w(Sezione sez) {
+		GiuntoBullonato giunto = sez.getGiunto();
+		double hw = sez.getConcio().getHw();
+		double tw = sez.getConcio().getTw();
+		double sN = (s+i)/2;
+		double sM = (s-i)/2;
+		double N = sN*tw*hw;
+		double M = sM*tw*hw*hw/6;
+		double V =getVed();
+		double p2 =giunto.getP2W(); 
+		double h = (giunto.getNfile2W()-1)*giunto.getP2W();
+		double y = h/2;
+		double yq =0;
+		do {
+			yq+=y*y;
+			y-=p2;
+		} while (y>0);
+		
+		yq = 2*yq *giunto.getNfile1W();
+		int nb = giunto.nfile1W*giunto.nfile2W;
+		double Fmax = Math.abs(N/nb)+Math.abs(M*(h/2)/(yq));
+		double Vmax = V/nb;
+		return Math.pow(Fmax*Fmax+Vmax*Vmax,0.5);
+	}
+	public void calcolaBulloni(Sezione sez,MaterialeAcciaio mat){
+		
+		GiuntoBullonato g = sez.getGiunto();
+		
+		FSd_sup=getFSd_sup(sez);
+		FSd_inf=getFSd_inf(sez);
+		FSd_w=getFSd_w(sez);
+		
+//resistenze bulloni
+		FbRdPiatp_sup = g.getFbRd_PiattabandaSup(sez, mat);
+		FbRdCoprig_sup=g.getFbRd_CoprigiuntoSup(sez);
+		FvRd_sup=g.getFvb_sup();
+		FscrSLU_sup=g.getFscr_sup(true);
+		FscrSLE_sup=g.getFscr_sup(false);
+		
+		FbRdPiatp_inf = g.getFbRd_PiattabandaInf(sez);
+		FbRdCoprig_inf=g.getFbRd_CoprigiuntoInf(sez);
+		FvRd_inf=g.getFvb_inf();
+		FscrSLU_inf=g.getFscr_inf(true);
+		FscrSLE_inf=g.getFscr_inf(false);
+
+		FbRdPiatp_w = g.getFbRd_PiattabandaW(sez, mat);
+		FbRdCoprig_w=g.getFbRd_CoprigiuntoW(sez, mat);
+		FvRd_w=g.getFvb_w();
+		FscrSLU_w=g.getFscr_w(true);
+		FscrSLE_w=g.getFscr_w(false);
+
+	}
+
+
+	
+}

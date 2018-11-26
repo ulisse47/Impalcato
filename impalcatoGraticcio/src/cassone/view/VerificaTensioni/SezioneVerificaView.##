@@ -1,0 +1,606 @@
+package cassone.view.VerificaTensioni;
+
+/*
+ * Created on 23-mar-2004
+ * Andrea Cavalieri
+ *
+ */
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Stroke;
+import java.awt.Toolkit;
+import java.awt.geom.AffineTransform;
+import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
+
+import javax.swing.JPanel;
+
+import cassone.model.Concio;
+import cassone.model.Progetto;
+import cassone.model.Sezione;
+import cassone.view.grafica.Drawing;
+
+/**
+ * @author Andrea
+ * 
+ * To change the template for this generated type comment go to
+ * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
+ */
+
+public class SezioneVerificaView extends JPanel {
+/*
+	// trasformazione originale
+	AffineTransform atOrigine;
+
+	// variabili globali del progetto
+	private int B, H, b0, b1, b2, b, h,be1,be2;
+
+	private int Btot = 0;
+	
+	private int[] yg = new int[4];
+	
+	private int bs, ts, tw, hw, bi, ti;
+	boolean concioGenerico;
+
+	private boolean calcoloBeff;
+
+	private double[] n = new double[5];
+
+	// variabili di utilit�
+	private int Htot, dxAnima, Hcarp;
+
+	// variabili di utilit� grafica
+	private int Bfinestra, Hfinestra;
+
+	private int FattoreScalaSpessori;
+
+	// grafica
+	private Color coloreSezioneAcciaio = Color.BLUE;
+
+	private Color coloreCopella = Color.darkGray;
+
+	private Color coloreSoletta = Color.lightGray;
+
+	private Color coloreQuote = Color.RED;
+
+	private Color[] coloreAssi = { Color.magenta, Color.cyan, Color.yellow,
+			Color.green, Color.ORANGE };
+
+	// utility grafica
+	private int ddquote;
+
+	private static SezioneVerificaView sezTipo;
+
+	*//**
+	 * 
+	 *//*
+	public SezioneVerificaView() {
+		super();
+		try {
+			jbInit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static SezioneVerificaView getInstance() {
+		if (sezTipo == null) {
+			sezTipo = new SezioneVerificaView();
+		}
+		return sezTipo;
+	}
+
+	*//**
+	 * The paint method provides the real magic. Here we cast the Graphics
+	 * object to Graphics2D to illustrate that we may use the same old graphics
+	 * capabilities with Graphics2D that we are used to using with Graphics.
+	 *//*
+	public void paintComponent(Graphics g) {
+		super.paintComponents(g);
+
+		try {
+
+			// setBackground(Color.white);
+
+			Graphics2D g2d = (Graphics2D) g;
+
+			// salva la trasformazione originaria
+			atOrigine = g2d.getTransform();
+
+			// salva le variabili globali in variabili locali
+			getVariabiliLocali();
+
+			disegnaSezioneTipo(g2d);
+
+			disegnaAssiNeutri(g2d);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	// salva le variabili del progetto in variabili private della
+	// classe presente
+	void getVariabiliLocali() {
+
+		Progetto prg = Progetto.getInstance();
+		Sezione sezione = prg.getCurrentSezioneVerifica();
+		Concio concio = sezione.getConcio();
+		if(sezione.getParametriOut().size()==0) return;
+
+		
+		// soletta
+		B = (int) (sezione.getB(prg.getCampate()));
+		H = (int) (sezione.getH());
+		b = (int) (sezione.getBinf());
+		h = (int) (sezione.getHinf());
+		
+		b0 = (int) (sezione.getBo());
+		b1 = (int) (sezione.getB1());
+		b2 = (int) (sezione.getB2());
+
+		calcoloBeff = sezione.isCalcoloAutomaticoBeff();
+		if(calcoloBeff){
+			be1= (int)(sezione.getBeff(prg.getCampate())/2+b0/2);
+			be2= (int)(sezione.getBeff(prg.getCampate())/2+b0/2);
+		}
+
+		// piattabanda inferiore
+		bi = (int) (concio.getBi());
+		ti = (int) (concio.getTi());
+
+		// anima
+		tw = (int) (concio.getTw());
+		hw = (int) (concio.getHw());
+
+		// piattabanda superiore
+		bs = (int) (concio.getBs());
+		ts = (int) (concio.getTs());
+
+		// utility
+		Hcarp = ti + hw + ts;
+
+		Htot = Hcarp + h + H;
+		FattoreScalaSpessori = 1;
+		
+		n[0] = Double.MAX_VALUE;
+		n[1] = prg.getN()[0];
+		n[2] = prg.getN()[1];
+		n[3] = prg.getN()[2];
+		n[4] = prg.getN()[3];
+		
+		concioGenerico = concio.isSezioneGenerica();
+
+		//assi neutri
+	     int row = TableTensioniView.getInstance().getTable().getSelectedRow();
+	     if(row==-1) row=0;
+	     
+		ParametriStaticiSezione ps = sezione.getParametriOut().get(row);
+//		ps =prg.getTensioniSezione(sezione, prg.getCombinazioni().get(row));
+		yg[0] = (int) ps.getYgCombo(concio);
+//		yg[0] = (int) sezione.getParametriStaticiAnalisi(true,
+//				Double.MAX_VALUE,prg.getCampate()).getYg();
+		yg[1] = (int) sezione.getParametriStaticiAnalisi(false, prg.getN()[0],
+				prg.getCampate()).getYg();
+		yg[2] = (int) sezione.getParametriStaticiAnalisi(false, prg.getN()[1],
+				 prg.getCampate()).getYg();
+		yg[3] = (int) sezione.getParametriStaticiAnalisi(false, prg.getN()[2],
+				 prg.getCampate()).getYg();
+
+	
+	}
+
+	// imposta il fattore di scala della classe AffineTransform at
+	void setFattoreDiScala(Graphics2D g) {
+
+		double fx, fy, W = 0, H = 0;
+		double xOrig = 0, Yorig = 0;
+
+
+		setOriginalTrasformation(g);
+
+		AffineTransform at = new AffineTransform();
+
+		W = getWidth();
+		H = getHeight();
+
+		if (calcoloBeff)
+			Btot = 2 * Math.max(b1, b2) + b0;
+		if (!calcoloBeff)
+			Btot = B;
+
+		fx = Math.min((W) / (Btot * 1.50), (H) / (Htot * 1.8));
+		fy = fx;
+
+		xOrig = W / 2;
+		Yorig = H / 2;
+
+		// imposta grafica
+		at.setToTranslation(xOrig, Yorig);
+		g.transform(at);
+		at.setToScale(fx, fy);
+		g.transform(at);
+
+		// variabili di utilit� grafica
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		ddquote = (int) (screenSize.width / 220 / fy);
+
+	}
+
+	// disegna il cassone completo
+	void disegnaSezioneTipo(Graphics2D g2d) {
+
+		disegnaCarpenteriaMetallica(g2d);
+		disegnaSoletta(g2d);
+		quota(g2d);
+	}
+
+	// disegna la carpenteria metallica
+	void disegnaCarpenteriaMetallica(Graphics2D g2d) {
+
+		// imposta la scala della finestra;
+		setFattoreDiScala(g2d);
+
+		AffineTransform at = new AffineTransform();
+		at.setToTranslation(Bfinestra / 2, getYorigine());
+		g2d.transform(at);
+
+		// disegna l'ala inferiore
+		Rectangle2D sInf = new Rectangle2D.Double(-bi / 2, -ti
+				* FattoreScalaSpessori, bi, ti * FattoreScalaSpessori);
+		g2d.setColor(coloreSezioneAcciaio);
+		g2d.fill(sInf);
+
+		// disegna le amime
+		Rectangle2D sAla = new Rectangle2D.Double(-tw / 2
+				* FattoreScalaSpessori, -Hcarp, tw * FattoreScalaSpessori,
+				Hcarp);
+		g2d.setColor(coloreSezioneAcciaio);
+		g2d.fill(sAla);
+
+		// disegna le ali superiori
+		Rectangle2D sSup = new Rectangle2D.Double(-bs / 2, -Hcarp, bs, ts
+				* FattoreScalaSpessori);
+		g2d.fill(sSup);
+
+	}
+
+	// disegna la soletta di calcestruzzo
+	void disegnaSoletta(Graphics2D g2d) {
+		setOriginalTrasformation(g2d);
+		setFattoreDiScala(g2d);
+
+		// mi sposto nella sezione all'estradosso carpenteria metallica
+		AffineTransform at = new AffineTransform();
+		at.setToTranslation(Bfinestra / 2, getYorigine() - Hcarp);
+		g2d.transform(at);
+		g2d.setColor(coloreSoletta);
+
+		// disegno il primo blocchetto di calcestruzzo bxh
+		Rectangle2D ac1 = new Rectangle2D.Double(-b / 2,-h, b, h);
+		g2d.fill(ac1);
+
+		//mi sposto in instradosso soletta
+		at = new AffineTransform();
+		at.setToTranslation(0,-h);
+		g2d.transform(at);
+		//disegno la soletta superiore
+		if (calcoloBeff){
+			Rectangle2D ac2 = new Rectangle2D.Double(-b0 / 2-b1,-H, b1+b0+b2, H);
+			g2d.draw(ac2);
+			ac2 = new Rectangle2D.Double(-b0 / 2-be1,-H, be1+b0+be2, H);
+			g2d.draw(ac2);
+			g2d.fill(ac2);
+		}else{
+			Rectangle2D ac2 = new Rectangle2D.Double(-B / 2,-H, B, H);
+			g2d.fill(ac2);
+		}
+		
+			
+		int vl = Lpi / 2 + dxAnima
+				- (int) (FattoreScalaSpessori / 2 * Sai / Math.cos(alfa));
+		int vl2 = vl - Lps / 2;
+		int vl3 = vl + Lps / 2;
+		int dy = Ss2 - Ss1;
+
+		int[] x0 = new int[4];
+		int[] y0 = new int[4];
+		x0[0] = x0[3] = -vl2 - 80;
+		x0[1] = x0[2] = x0[0] + 2 * vl2 + 160;
+		y0[0] = y0[1] = 0;
+		y0[2] = y0[3] = -Spr;
+		Polygon ala = new Polygon(x0, y0, 4);
+		g2d.fill(ala);
+
+		int[] x1 = new int[6];
+		int[] y1 = new int[6];
+		x1[0] = x1[5] = vl3 - 80;
+		x1[1] = x1[4] = Beff_i / 2;
+		x1[2] = x1[3] = Beff_s / 2;
+
+		y1[0] = y1[1] = 0;
+		y1[4] = y1[5] = -Spr;
+		y1[2] = -dy;
+		y1[3] = -dy - Spr;
+		ala = new Polygon(x1, y1, 6);
+		g2d.fill(ala);
+
+		int[] x2 = new int[6];
+		int[] y2 = new int[6];
+		x2[0] = -x1[0];
+		x2[1] = -x1[1];
+		x2[2] = -x1[2];
+		x2[3] = -x1[3];
+		x2[4] = -x1[4];
+		x2[5] = -x1[5];
+		y2[0] = y1[0];
+		y2[1] = y1[1];
+		y2[2] = y1[2];
+		y2[3] = y1[3];
+		y2[4] = y1[4];
+		y2[5] = y1[5];
+
+		ala = new Polygon(x2, y2, 6);
+		g2d.fill(ala);
+
+		int[] x = new int[14];
+		int[] y = new int[14];
+		x[0] = x1[0];
+		x[1] = x1[5];
+		x[2] = x1[4];
+		x[3] = x1[3];
+		x[4] = x1[3];
+
+		y[0] = y1[0];
+		y[1] = y1[5];
+		y[2] = y1[4];
+		y[3] = y1[3];
+		y[4] = y1[3] - Ss1;
+
+		y[5] = y[4];
+		x[5] = x2[3];
+
+		x[6] = x2[3];
+		x[7] = x2[4];
+		x[8] = x2[5];
+		x[9] = x2[0];
+
+		y[6] = y2[3];
+		y[7] = y2[4];
+		y[8] = y2[5];
+		y[9] = y2[0];
+
+		x[10] = x0[0];
+		x[11] = x0[3];
+		x[12] = x0[2];
+		x[13] = x0[1];
+
+		y[10] = y0[0];
+		y[11] = y0[3];
+		y[12] = y0[2];
+		y[13] = y0[1];
+
+		g2d.setColor(coloreSoletta);
+		ala = new Polygon(x, y, 14);
+		g2d.fill(ala);
+
+		// area controsoletta
+		if (areaControSoletta != 0) {
+			setOriginalTrasformation(g2d);
+			setFattoreDiScala(g2d);
+
+			at = new AffineTransform();
+			at.setToTranslation(Bfinestra / 2, getYorigine() - Spi
+					* FattoreScalaSpessori);
+			g2d.transform(at);
+			g2d.setColor(coloreSoletta);
+			Rectangle2D rc = new Rectangle2D.Double(-Lpi / 2, -100, Lpi, 100);
+			g2d.fill(rc);
+
+		}
+		
+	}
+
+
+	// disegna li assi neutri della sezione per i vari n
+	void disegnaAssiNeutri(Graphics2D g2d) {
+
+		float[] fl = { 100, 50 };
+		BasicStroke str = new BasicStroke(1, BasicStroke.CAP_BUTT,
+				BasicStroke.JOIN_BEVEL, 10, fl, 100);
+		Stroke orStr = g2d.getStroke();
+
+		int b = (int) (1.5 * bi / 2);
+		int db = (int) ((Btot / 2 - b) / 3);
+
+		// per ogni n
+		for (int i = 0; i < 1; ++i) {
+
+			// imposta gli assi
+			setOriginalTrasformation(g2d);
+			setFattoreDiScala(g2d);
+			AffineTransform at = new AffineTransform();
+
+			at
+					.setToTranslation(-b - db * (i), getYorigine() - Hcarp 
+																			 * +
+																			 * yg[i]
+																			 );
+			g2d.transform(at);
+
+			// imposta colori e penne
+			g2d.setStroke(str);
+			g2d.setColor(coloreAssi[i]);
+			Line2D ln = new Line2D.Double(0, yg[i], db, yg[i]);
+			g2d.draw(ln);
+
+			String ns;
+			if (n[i] == Double.MAX_VALUE)
+				ns = "\u221E";
+			else
+				ns = Double.toString(n[i]);
+
+			String str1 = "n=" + ns; // + "" + Integer.toString(hgi[i]/10);
+			FontMetrics metrics = g2d.getFontMetrics();
+			int tW = metrics.stringWidth(str1);
+			g2d.drawString(str1, tW / 2, yg[i] - 30);
+
+			// quote
+			// imposta colori e penne
+			g2d.setStroke(orStr);
+			at = new AffineTransform();
+			at.setToRotation(-Math.PI / 2);
+			g2d.transform(at);
+			disegnaQuotaTraDuePunti(-yg[i], 0, "", ddquote, g2d);
+
+		}
+	}
+
+	// disegna le quote
+	void quota(Graphics2D g2d) {
+
+		//imposto la finestra
+		setOriginalTrasformation(g2d);
+		setFattoreDiScala(g2d);
+		g2d.setColor(coloreQuote);
+		
+		//quota soletta
+		//prima fila orizzonate di quote superiori
+		AffineTransform at = new AffineTransform();
+		at.setToTranslation(Bfinestra / 2, getYorigine() - Htot - 8*ddquote);
+		g2d.transform(at);
+	//quota soletta superiore
+		if(calcoloBeff){
+//			disegnaQuotaTraDuePunti(-b0/ 2-be1, b0/2+be2, "Beff: "+Integer.toString(b0+be1+be2), ddquote, g2d);
+//			at.setToTranslation(0, 3*ddquote);
+//			g2d.transform(at);
+//			disegnaQuotaTraDuePunti(-b0/ 2-be1, -b0/2, "be1: "+Integer.toString(be1), ddquote, g2d);
+//			disegnaQuotaTraDuePunti(-b0/ 2, b0/2, "b0: "+Integer.toString(b0), ddquote, g2d);
+//			disegnaQuotaTraDuePunti(b0/2, b0/2+be2, "be2: "+Integer.toString(be2), ddquote, g2d);
+			
+		}else{
+			disegnaQuotaTraDuePunti(-B / 2, B/ 2, "", ddquote, g2d);
+		}
+		
+		//quota piattabanda inf
+		//riposizioni gli assi
+		setFattoreDiScala(g2d);
+		at.setToTranslation(Bfinestra / 2, getYorigine() + 4 * ddquote);
+		g2d.transform(at);
+		disegnaQuotaTraDuePunti(-bi/2, bi/2, "", ddquote, g2d);
+		
+		//quota piattabanda sup
+		//riposizioni gli assi
+		setFattoreDiScala(g2d);
+		at.setToTranslation(Bfinestra / 2, getYorigine() - Hcarp+5*ddquote);
+		g2d.transform(at);
+		disegnaQuotaTraDuePunti(-bs/2, bs/2, "", ddquote, g2d);
+
+		//quote verticali
+		setFattoreDiScala(g2d);
+		at.setToTranslation(Bfinestra/2+Btot/2+8*ddquote, getYorigine());
+		g2d.transform(at);
+		at.setToRotation(-Math.PI / 2);
+		g2d.transform(at);
+		disegnaQuotaTraDuePunti(0, Hcarp, "", ddquote, g2d);
+		disegnaQuotaTraDuePunti(Hcarp, Hcarp + h+H, "", ddquote, g2d);
+
+		if(h!=0){
+			at.setToTranslation(0, -4 * ddquote);
+			g2d.transform(at);
+			disegnaQuotaTraDuePunti(Hcarp, Hcarp + h, "", ddquote, g2d);
+		}
+		at.setToTranslation(0, 8 * ddquote);
+		g2d.transform(at);
+		disegnaQuotaTraDuePunti(0, Hcarp + h+H, "", ddquote, g2d);
+
+		
+		//se concio generico esce
+		if(concioGenerico) return;
+		
+		// spessori piattabande
+		setFattoreDiScala(g2d);
+		at.setToTranslation(Bfinestra / 2 + bi / 4, getYorigine());
+		g2d.transform(at);
+		// spessore paittabanda inferiore
+		Line2D ln = new Line2D.Double(0, 0, ddquote, 3 * ddquote);
+		Drawing.leader(0, 0, 0, 2 * ddquote, 2 * ddquote, "sp.="
+				+ Integer.toString(ti) + "mm", g2d);
+		// anima
+		at = new AffineTransform();
+		at.setToTranslation(-bi / 4, 0);
+		g2d.transform(at);
+		ln.setLine(0, -Hcarp / 2, 0 + Hcarp / 7, -Hcarp / 2);
+		g2d.draw(ln);
+		g2d.drawString("sp.=" + Integer.toString(tw) + " mm", Hcarp / 7,
+				-Hcarp / 2);
+
+		//superiore
+		setFattoreDiScala(g2d);
+		at = new AffineTransform();
+		at.setToTranslation(Bfinestra / 2 + bs / 2.5, getYorigine()-Hcarp + ts);
+		g2d.transform(at);
+		Drawing.leader(0, 0, 0, 2 * ddquote, 2 * ddquote, "sp.="
+				+ Integer.toString(ts) + "mm", g2d);
+
+	}
+
+	// disegna una quota tra due punti x1 e x2
+	// se non si mette la stringa della quota calcola la differenza
+	// tra x1 e x2
+	void disegnaQuotaTraDuePunti(int x1, int x2, String quota, int dd,
+			Graphics2D g2d) {
+
+		int dx = Math.abs(x2 - x1);
+		if (quota == "")
+			quota = Integer.toString(dx);
+
+		Line2D ln = new Line2D.Double();
+		// linea principale
+		ln.setLine(x1 - dd, 0, x2 + dd, 0);
+		g2d.draw(ln);
+		// linea di estensione
+		ln.setLine(x1 + dd, dd, x1 - dd, -dd);
+		g2d.draw(ln);
+		ln.setLine(x2 + dd, dd, x2 - dd, -dd);
+		g2d.draw(ln);
+		ln.setLine(x1, dd, x1, -dd);
+		g2d.draw(ln);
+		ln.setLine(x2, dd, x2, -dd);
+		g2d.draw(ln);
+
+		Font fn = new Font("Arial", 0, (int) (ddquote * 1.8));
+		g2d.setFont(fn);
+
+		FontMetrics metrics = g2d.getFontMetrics();
+		int tW = metrics.stringWidth(quota);
+		if (dx > tW) {
+			g2d.drawString(quota, x2 / 2 + x1 / 2 - tW / 2, -ddquote / 2);
+		} else {
+			g2d.drawString(quota, Math.max(x2, x1) + ddquote, 0);
+		}
+
+	}
+
+	void setOriginalTrasformation(Graphics2D g) {
+		g.setTransform(atOrigine);
+	}
+
+	// restituisce la posizione dell'intradosso piattabanda inferiore rispetto
+	// al bordo
+	// superiore della finestra
+	private int getYorigine() {
+		return (int)(0.6*Htot );
+	}
+
+	private void jbInit() throws Exception {
+		this.setMinimumSize(new Dimension(100, 100));
+		this.setVerifyInputWhenFocusTarget(true);
+	}*/
+}
