@@ -30,6 +30,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
 
     String code;
     Installer installer;
+    private static String Maya_Path ="/AppData/Roaming/.impalcatograticciosuite/dev/Maya.data";
 
     /**
      * Creates new form dlgAttivaSoftware
@@ -38,7 +39,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        lb_cercaMaya.setText("Hai già attivato software 'Spalle'? Seleziona la cartella di installazione per attivare 'Impalcati'");
+        lb_cercaMaya.setText("Utilizzare questa funzione solo su richiesta della Assistenza");
         jTextArea1.setLineWrap(true);
         this.installer = installer;
         try {
@@ -222,7 +223,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
                                 .addComponent(lb_cercaMaya)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(bt_FileChoser, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
                                 .addComponent(btDemo)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btCancella)))
@@ -294,7 +295,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
         JFileChooser chooser;
 
         chooser = new JFileChooser();
-        chooser.setCurrentDirectory(new java.io.File("."));
+        chooser.setCurrentDirectory(new java.io.File(System.getProperty("user.home") + "//AppData//Roaming"));
         chooser.setDialogTitle("Directory di installazione");
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         //
@@ -311,7 +312,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
 
             if (file != null) {
                 JOptionPane.showMessageDialog(this, "File attivazione trovato");
-                File dest = new File(System.getProperty("user.dir") + "\\Maya.data");
+                File dest = new File(System.getProperty("user.home") + Maya_Path);
 
                 try {
                     if (dest.exists()) {
@@ -347,7 +348,7 @@ public class dlgAttivaSoftware extends javax.swing.JDialog {
     public File cercaFile(File from, String nome) {
         //utilizziamo per la ricerca un filtro
         // create new filename filter
-        File original = new File(System.getProperty("user.dir") + "\\Maya.data");
+        File original = new File(System.getProperty("user.home") + Maya_Path);
 
         File fl;
         File[] files = from.listFiles(new Filter(nome));

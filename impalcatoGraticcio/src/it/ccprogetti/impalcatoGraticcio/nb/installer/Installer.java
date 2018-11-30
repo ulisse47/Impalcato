@@ -28,7 +28,7 @@ public class Installer extends ModuleInstall {
                     int activeRemotly = StartUpExt.getInstance().activateRemotely();
                     switch (activeRemotly) {
                         case StartUpExt.HTTP_ERROR:
-                            dlg.setStato("Non attivato. Qualche errore è occorso durante il processo di attivazione");
+                            dlg.setStato("Non attivato. Errore durante il processo di attivazione");
                             return false;
                         case StartUpExt.REGIGESTERED:
                             dlg.setStato("Attivato con successo!");
@@ -37,11 +37,11 @@ public class Installer extends ModuleInstall {
                             return true;
                     }
                 case StartUpExt.NOT_VALID_CODE:
-                    dlg.setStato("Non attivato: il codic inserito non è valido");
+                    dlg.setStato("Non attivato: il codice inserito non è valido");
                     return false;
 
                 case StartUpExt.HTTP_ERROR:
-                    dlg.setStato("Non attivato. Qualche errore è occorso durante il processo di attivazione");
+                    dlg.setStato("Non attivato. Errore durante il processo di attivazione");
                     return false;
                 case StartUpExt.DEMO:
                     runProgram(true);
