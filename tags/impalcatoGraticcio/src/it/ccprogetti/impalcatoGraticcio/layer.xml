@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+    <folder name="Actions">
+        <folder name="Carico">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RenameCombinazioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCombinazioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-ImportaCondizioniAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCondizioneAction.instance"/>
+        </folder>
+        <folder name="Edit">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteConcioAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaConcioAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-modificaConciAction.instance"/>
+            
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-addSolettaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-deleteSolettaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-rinominaSoletteAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-modificaSolettaAction.instance"/>
+            
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RenameSezioneAction.instance"/>
+            
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneVerificaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaSezioneVerificaAction.instance"/>
+
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCampataAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-EditLuciCamapataAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-NewProgettoAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance"/>
+            
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAsAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance"/>
+            
+            <file name="org-openide-actions-CopyAction.instance_hidden"/>
+            <file name="org-openide-actions-CutAction.instance_hidden"/>
+            <file name="org-openide-actions-DeleteAction.instance_hidden"/>
+            <file name="org-openide-actions-FindAction.instance_hidden"/>
+            <file name="org-openide-actions-GotoAction.instance_hidden"/>
+            <file name="org-openide-actions-PasteAction.instance_hidden"/>
+            <file name="org-openide-actions-RedoAction.instance_hidden"/>
+            <file name="org-openide-actions-ReplaceAction.instance_hidden"/>
+            <file name="org-openide-actions-UndoAction.instance_hidden"/>
+        </folder>
+        <folder name="System">
+            <file name="org-netbeans-core-actions-JumpNextAction.instance_hidden"/>
+            <file name="org-netbeans-core-actions-JumpPrevAction.instance_hidden"/>
+            <file name="org-netbeans-core-actions-OptionsAction.instance_hidden"/>
+            <file name="org-openide-actions-EditAction.instance_hidden"/>
+            <file name="org-openide-actions-FileSystemRefreshAction.instance_hidden"/>
+            <file name="org-openide-actions-InstantiateAction.instance_hidden"/>
+            <file name="org-openide-actions-MoveDownAction.instance_hidden"/>
+            <file name="org-openide-actions-MoveUpAction.instance_hidden"/>
+            <file name="org-openide-actions-NewAction.instance_hidden"/>
+            <file name="org-openide-actions-NewTemplateAction.instance_hidden"/>
+            <file name="org-openide-actions-OpenAction.instance_hidden"/>
+            <file name="org-openide-actions-PageSetupAction.instance_hidden"/>
+            <file name="org-openide-actions-PopupAction.instance_hidden"/>
+            <file name="org-openide-actions-PrintAction.instance_hidden"/>
+            <file name="org-openide-actions-RenameAction.instance_hidden"/>
+            <file name="org-openide-actions-ReorderAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAllAction.instance_hidden"/>
+            <file name="org-openide-actions-ToolsAction.instance_hidden"/>
+            <file name="org-openide-actions-ViewAction.instance_hidden"/>
+        </folder>
+        <folder name="Tools">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.instance"/>
+        </folder>
+        <folder name="View">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-TestAction.instance"/>
+            <file name="org-netbeans-core-actions-HTMLViewAction.instance_hidden"/>
+            <file name="org-openide-actions-CustomizeAction.instance_hidden"/>
+        </folder>
+        <folder name="Window">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-GeometriaAction.instance"/>           
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-TensioniAction.instance"/>        
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-VerificaGiuntiAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-VerificaInsAction.instance"/>
+        </folder>
+    </folder>
+    
+    <folder name="Menu">
+        <folder name="File">
+            <attr name="OpenIDE-Folder-SortMode" stringvalue="N"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-NewProgettoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-NewProgettoAction.instance"/>
+            </file>
+            <attr name="Separator3.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance" boolvalue="false"/>
+            <attr name="Separator2.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance/org-openide-actions-PageSetupAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance/Separator3.instance" boolvalue="true"/>
+            <attr name="Separator3.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAsAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAsAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAsAction.instance/org-openide-actions-PageSetupAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAsAction.instance/Separator4.instance" boolvalue="true"/>
+            <attr name="Separator4.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance/org-netbeans-core-actions-SystemExit.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance/Separator4_1.instance" boolvalue="true"/>
+            <file name="Separator4_1.instance" url="Separator4_1.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="Separator4_1.instance/org-netbeans-core-actions-SystemExit.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-NewProgettoAction.shadow/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance/Separator2.instance" boolvalue="true"/>
+            <file name="org-openide-actions-PageSetupAction.instance_hidden"/>
+            <file name="org-openide-actions-PrintAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAction.instance_hidden"/>
+            <file name="org-openide-actions-SaveAllAction.instance_hidden"/>
+        </folder>
+        <attr name="File/Sezioni" boolvalue="true"/>
+        <folder name="Sezioni">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteConcioAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteConcioAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteConcioAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaConcioAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaConcioAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaConcioAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaConcioAction.instance/javax-swing-JSeparator.instance" boolvalue="true"/>
+            
+                 
+            <file name="javax-swing-JSeparator.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="javax-swing-JSeparator.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-addSolettaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-addSolettaAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-addSolettaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-deleteSolettaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-deleteSolettaAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-deleteSolettaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-rinominaSoletteAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-rinominaSoletteAction.instance"/>
+            
+            
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-rinominaSoletteAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-RenameSezioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RenameSezioneAction.instance"/>
+            
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-RenameSezioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore0_1.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore0_1.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore0_1.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneVerificaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneVerificaAction.instance"/>            
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteSezioneVerificaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaSezioneVerificaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaSezioneVerificaAction.instance"/>            
+            
+            
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-RinominaSezioneVerificaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore2.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore2.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            
+            
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore2.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.shadow" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.instance"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorAfter.instance/it-ccprogetti-impalcatoGraticcio-nb-addSolettaAction.instance" boolvalue="true"/>
+        </folder>
+        
+        <attr name="Sezioni/Carichi" boolvalue="true"/>
+        <folder name="Carichi">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCondizioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCondizioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCondizioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-ImportaCondizioniAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-ImportaCondizioniAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-ImportaCondizioniAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore0_1.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore0_1.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-ImportaCondizioniAction.instance/javax-swing-JSeparator.instance" boolvalue="true"/>
+            <file name="javax-swing-JSeparator.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="javax-swing-JSeparator.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCombinazioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCombinazioneAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCombinazioneAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-RenameCombinazioneAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-RenameCombinazioneAction.instance"/>
+        </folder>
+        <attr name="Carichi/Tools" boolvalue="true"/>
+        <folder name="Tools">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCampataAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-DeleteCampataAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCampataAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-separatorBefore.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-EditLuciCamapataAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-EditLuciCamapataAction.instance"/>
+            </file>
+            <file name="org-netbeans-core-actions-ConfigureShortcutsAction.instance_hidden"/>
+        </folder>
+        
+        <attr name="Tools/Elabora" boolvalue="true"/>
+        <folder name="Elabora">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.instance"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow/it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance" boolvalue="true"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow" boolvalue="false"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow/it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow" boolvalue="false"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Tools/it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.instance"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow/it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance" boolvalue="true"/>
+            <file name="javax-swing-JSeparator.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow/javax-swing-JSeparator.instance" boolvalue="true"/>
+            <attr name="javax-swing-JSeparator.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-StampaAction.instance" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance/it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.shadow/it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow" boolvalue="true"/>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.shadow/javax-swing-JSeparator.instance" boolvalue="true"/>
+        </folder>
+        
+        <attr name="Elabora/Finestra" boolvalue="true"/>
+        <folder name="Finestra">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-GeometriaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-TensioniAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-VerificaGiuntiAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-view-VerificaInsAction.instance"/>
+            <file name="org-netbeans-core-windows-actions-CloseAllDocumentsAction.instance">
+                <attr name="instanceClass" stringvalue="org.netbeans.core.windows.actions.CloseAllDocumentsAction"/>
+            </file>
+            <file name="org-netbeans-core-windows-actions-ToolbarsListAction.instance" url="org-netbeans-core-windows-actions-ToolbarsListAction.instance"/>
+        </folder>
+        
+        <attr name="Finestra/View" boolvalue="true"/>
+        <attr name="View/Help" boolvalue="true"/>
+        <attr name="Elabora/Help" boolvalue="true"/>
+        <folder name="Help">
+            <attr name="HelpShortcuts/Separator1.instance" boolvalue="true"/>
+            <attr name="HelpShortcuts\SystemFileSystem.localizingBundle" stringvalue="org.netbeans.modules.javahelp.resources.Bundle"/>
+            <attr name="Separator1.instance/org-netbeans-core-actions-AboutAction.instance" boolvalue="true"/>
+            <attr name="master-help.xml/HelpShortcuts" boolvalue="true"/>
+            <file name="Separator1.instance" url="Separator1.instance">
+                <attr name="instanceClass" stringvalue="javax.swing.JSeparator"/>
+            </file>
+            <file name="master-help.xml" url="master-help.xml"/>
+            <file name="org-netbeans-core-actions-AboutAction.instance"/>
+        </folder>
+        <file name="Edit_hidden"/>
+        <file name="GoTo_hidden"/>
+        <file name="View_hidden"/>
+        <file name="Window_hidden"/>
+    </folder>
+    
+    <folder name="Services">
+        <file name="Browsers_hidden"/>
+        <folder name="JavaHelp">
+            <file name="impalcatoGraticcio-helpset.xml" url="impalcatoGraticcio-helpset.xml"/>
+        </folder>
+    </folder>
+    <folder name="Shortcuts">
+        <file name="D-A.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance"/>
+        </file>
+        <file name="D-E.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance"/>
+        </file>
+        <file name="D-M.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-modificaConciAction.instance"/>
+        </file>
+        <file name="D-Q.shadow">
+            <attr name="originalFile" stringvalue="Actions/Carico/it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance"/>
+        </file>
+        <file name="D-V.shadow">
+            <attr name="originalFile" stringvalue="Actions/Tools/it-ccprogetti-impalcatoGraticcio-nb-actions-verificaAction.instance"/>
+        </file>
+        <file name="D-W.shadow">
+            <attr name="originalFile" stringvalue="Actions/Carico/it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance"/>
+        </file>
+        <file name="D-R.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance"/>
+        </file>
+        <file name="D-K.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.instance"/>
+        </file>
+        <file name="D-O.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance"/>
+        </file> 
+        <file name="D-J.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-NewProgettoAction.instance"/>
+        </file> 
+        <file name="D-S.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance"/>
+        </file>
+        <file name="D-N.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance"/>
+        </file>
+        <file name="DO-E.shadow">
+            <attr name="originalFile" stringvalue="Actions/Tools/it-ccprogetti-impalcatoGraticcio-nb-actions-resetAnalisiAction.instance"/>
+        </file>
+        <file name="DO-S.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-addSolettaAction.instance"/>
+        </file>
+        <file name="DS-C.shadow">
+            <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-modificaConciAction.instance"/>
+        </file>
+    </folder>
+    <folder name="Toolbars">
+        <!--<folder name="File">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.shadow">
+                <attr name="originalFile" stringvalue="Actions/Edit/it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.instance"/>
+            </file>
+            <attr name="it-ccprogetti-impalcatoGraticcio-nb-actions-GiuntoBullonatoAction.shadow/org-openide-actions-SaveAllAction.instance" boolvalue="true"/>
+        </folder>-->
+        <file name="Edit_hidden"/>
+        <file name="File_hidden"/>
+        <file name="Standard.xml" url="Standard.xml"/>
+        <folder name="Standard">
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCombinazioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-AddConcioAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-AddCondizioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-AddSezioneVerificaAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-ElaboraAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-OpenAction.instance"/>
+            <file name="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance" url="it-ccprogetti-impalcatoGraticcio-nb-actions-SaveAction.instance"/>
+        </folder>
+    </folder>
+    <folder name="UI">
+        <folder name="Services">
+            <folder name="IDEConfiguration">
+                <file name="ServerAndExternalToolSettings_hidden"/>
+                <file name="System_hidden"/>
+            </folder>
+        </folder>
+    </folder>
+    <folder name="Windows2">
+        <folder name="Components">
+            <file name="GeometriaTopComponent.settings" url="GeometriaTopComponentSettings.xml"/>
+            <file name="TensioniTopComponent.settings" url="TensioniTopComponentSettings.xml"/>
+            <file name="VerificaGiuntiTopComponent.settings" url="VerificaGiuntiTopComponentSettings.xml"/> 
+            <file name="VerificaInsTopComponent.settings" url="VerificaInsTopComponentSettings.xml"/>
+        </folder>
+        <folder name="Modes">
+            <folder name="editor">
+                <file name="GeometriaTopComponent.wstcref" url="GeometriaTopComponentWstcref.xml"/>
+                <file name="TensioniTopComponent.wstcref" url="TensioniTopComponentWstcref.xml"/>
+                <file name="VerificaGiuntiTopComponent.wstcref" url="VerificaGiuntiTopComponentWstcref.xml"/>
+                <file name="VerificaInsTopComponent.wstcref" url="VerificaInsTopComponentWstcref.xml"/>
+            </folder>
+        </folder>
+    </folder>
+    
+    
+    
+</filesystem>

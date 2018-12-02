@@ -1,0 +1,4980 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_01" class="java.beans.XMLDecoder"> 
+ <object class="cassone.model.Progetto"> 
+  <void property="campate"> 
+   <object class="cassone.model.Campate"/> 
+  </void> 
+  <void property="combinazioni"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="cassone.model.CombinazioneCarichi"> 
+      <void property="c1"> 
+       <array class="double" length="300"> 
+        <void index="0"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="1"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="2"> 
+         <double>1.2</double> 
+        </void> 
+        <void index="3"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="5"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="6"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="7"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="8"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="9"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="10"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="11"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="12"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="13"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="14"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="15"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="16"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="17"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="18"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="19"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="20"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="21"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="22"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="23"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="24"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="25"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="26"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="27"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="28"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="29"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="30"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="31"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="32"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="33"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="34"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="35"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="36"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="37"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="38"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="39"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="40"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="41"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="42"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="43"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="44"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="45"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="46"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="47"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="48"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="49"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="50"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="51"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="52"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="53"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="54"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="55"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="56"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="57"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="58"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="59"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="60"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="61"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="62"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="63"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="64"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="65"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="66"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="67"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="68"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="69"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="70"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="71"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="72"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="73"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="74"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="75"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="76"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="77"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="78"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="79"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="80"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="81"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="82"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="83"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="84"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="85"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="86"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="87"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="88"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="89"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="90"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="91"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="92"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="93"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="94"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="95"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="96"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="97"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="98"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="99"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="100"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="101"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="102"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="103"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="104"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="105"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="106"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="107"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="108"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="109"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="110"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="111"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="112"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="113"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="114"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="115"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="116"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="117"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="118"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="119"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="120"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="121"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="122"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="123"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="124"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="125"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="126"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="127"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="128"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="129"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="130"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="131"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="132"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="133"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="134"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="135"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="136"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="137"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="138"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="139"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="140"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="141"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="142"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="143"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="144"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="145"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="146"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="147"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="148"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="149"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="150"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="151"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="152"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="153"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="154"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="155"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="156"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="157"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="158"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="159"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="160"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="161"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="162"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="163"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="164"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="165"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="166"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="167"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="168"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="169"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="170"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="171"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="172"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="173"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="174"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="175"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="176"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="177"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="178"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="179"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="180"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="181"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="182"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="183"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="184"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="185"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="186"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="187"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="188"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="189"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="190"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="191"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="192"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="193"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="194"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="195"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="196"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="197"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="198"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="199"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="200"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="201"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="202"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="203"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="204"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="205"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="206"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="207"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="208"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="209"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="210"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="211"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="212"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="213"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="214"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="215"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="216"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="217"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="218"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="219"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="220"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="221"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="222"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="223"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="224"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="225"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="226"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="227"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="228"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="229"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="230"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="231"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="232"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="233"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="234"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="235"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="236"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="237"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="238"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="239"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="240"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="241"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="242"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="243"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="244"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="245"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="246"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="247"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="248"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="249"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="250"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="251"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="252"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="253"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="254"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="255"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="256"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="257"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="258"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="259"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="260"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="261"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="262"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="263"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="264"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="265"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="266"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="267"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="268"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="269"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="270"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="271"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="272"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="273"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="274"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="275"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="276"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="277"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="278"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="279"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="280"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="281"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="282"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="283"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="284"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="285"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="286"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="287"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="288"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="289"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="290"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="291"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="292"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="293"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="294"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="295"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="296"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="297"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="298"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="299"> 
+         <double>1.0</double> 
+        </void> 
+       </array> 
+      </void> 
+      <void property="c2"> 
+       <array class="double" length="300"> 
+        <void index="0"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="1"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="2"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="3"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="4"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="5"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="6"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="7"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="8"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="9"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="10"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="11"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="12"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="13"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="14"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="15"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="16"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="17"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="18"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="19"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="20"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="21"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="22"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="23"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="24"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="25"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="26"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="27"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="28"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="29"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="30"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="31"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="32"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="33"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="34"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="35"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="36"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="37"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="38"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="39"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="40"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="41"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="42"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="43"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="44"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="45"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="46"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="47"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="48"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="49"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="50"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="51"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="52"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="53"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="54"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="55"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="56"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="57"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="58"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="59"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="60"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="61"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="62"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="63"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="64"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="65"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="66"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="67"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="68"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="69"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="70"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="71"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="72"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="73"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="74"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="75"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="76"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="77"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="78"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="79"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="80"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="81"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="82"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="83"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="84"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="85"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="86"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="87"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="88"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="89"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="90"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="91"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="92"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="93"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="94"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="95"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="96"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="97"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="98"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="99"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="100"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="101"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="102"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="103"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="104"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="105"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="106"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="107"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="108"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="109"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="110"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="111"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="112"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="113"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="114"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="115"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="116"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="117"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="118"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="119"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="120"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="121"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="122"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="123"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="124"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="125"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="126"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="127"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="128"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="129"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="130"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="131"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="132"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="133"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="134"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="135"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="136"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="137"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="138"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="139"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="140"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="141"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="142"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="143"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="144"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="145"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="146"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="147"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="148"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="149"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="150"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="151"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="152"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="153"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="154"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="155"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="156"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="157"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="158"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="159"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="160"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="161"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="162"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="163"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="164"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="165"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="166"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="167"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="168"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="169"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="170"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="171"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="172"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="173"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="174"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="175"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="176"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="177"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="178"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="179"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="180"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="181"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="182"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="183"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="184"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="185"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="186"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="187"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="188"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="189"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="190"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="191"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="192"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="193"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="194"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="195"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="196"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="197"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="198"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="199"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="200"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="201"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="202"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="203"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="204"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="205"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="206"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="207"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="208"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="209"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="210"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="211"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="212"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="213"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="214"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="215"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="216"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="217"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="218"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="219"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="220"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="221"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="222"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="223"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="224"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="225"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="226"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="227"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="228"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="229"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="230"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="231"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="232"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="233"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="234"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="235"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="236"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="237"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="238"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="239"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="240"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="241"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="242"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="243"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="244"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="245"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="246"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="247"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="248"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="249"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="250"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="251"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="252"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="253"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="254"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="255"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="256"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="257"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="258"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="259"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="260"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="261"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="262"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="263"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="264"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="265"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="266"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="267"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="268"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="269"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="270"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="271"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="272"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="273"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="274"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="275"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="276"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="277"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="278"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="279"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="280"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="281"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="282"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="283"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="284"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="285"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="286"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="287"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="288"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="289"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="290"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="291"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="292"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="293"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="294"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="295"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="296"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="297"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="298"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="299"> 
+         <double>1.0</double> 
+        </void> 
+       </array> 
+      </void> 
+      <void property="name"> 
+       <string>DT</string> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="cassone.model.CombinazioneCarichi"> 
+      <void property="c1"> 
+       <array class="double" length="300"> 
+        <void index="0"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="1"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="3"> 
+         <double>1.5</double> 
+        </void> 
+        <void index="4"> 
+         <double>1.2</double> 
+        </void> 
+        <void index="5"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="6"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="7"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="8"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="9"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="10"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="11"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="12"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="13"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="14"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="15"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="16"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="17"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="18"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="19"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="20"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="21"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="22"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="23"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="24"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="25"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="26"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="27"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="28"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="29"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="30"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="31"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="32"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="33"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="34"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="35"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="36"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="37"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="38"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="39"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="40"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="41"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="42"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="43"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="44"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="45"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="46"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="47"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="48"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="49"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="50"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="51"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="52"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="53"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="54"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="55"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="56"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="57"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="58"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="59"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="60"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="61"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="62"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="63"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="64"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="65"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="66"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="67"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="68"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="69"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="70"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="71"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="72"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="73"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="74"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="75"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="76"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="77"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="78"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="79"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="80"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="81"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="82"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="83"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="84"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="85"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="86"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="87"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="88"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="89"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="90"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="91"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="92"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="93"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="94"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="95"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="96"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="97"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="98"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="99"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="100"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="101"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="102"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="103"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="104"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="105"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="106"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="107"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="108"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="109"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="110"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="111"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="112"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="113"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="114"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="115"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="116"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="117"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="118"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="119"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="120"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="121"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="122"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="123"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="124"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="125"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="126"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="127"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="128"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="129"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="130"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="131"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="132"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="133"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="134"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="135"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="136"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="137"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="138"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="139"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="140"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="141"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="142"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="143"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="144"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="145"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="146"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="147"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="148"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="149"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="150"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="151"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="152"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="153"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="154"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="155"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="156"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="157"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="158"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="159"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="160"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="161"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="162"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="163"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="164"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="165"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="166"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="167"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="168"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="169"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="170"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="171"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="172"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="173"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="174"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="175"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="176"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="177"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="178"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="179"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="180"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="181"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="182"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="183"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="184"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="185"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="186"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="187"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="188"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="189"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="190"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="191"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="192"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="193"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="194"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="195"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="196"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="197"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="198"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="199"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="200"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="201"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="202"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="203"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="204"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="205"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="206"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="207"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="208"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="209"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="210"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="211"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="212"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="213"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="214"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="215"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="216"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="217"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="218"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="219"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="220"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="221"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="222"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="223"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="224"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="225"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="226"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="227"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="228"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="229"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="230"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="231"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="232"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="233"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="234"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="235"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="236"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="237"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="238"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="239"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="240"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="241"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="242"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="243"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="244"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="245"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="246"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="247"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="248"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="249"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="250"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="251"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="252"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="253"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="254"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="255"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="256"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="257"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="258"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="259"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="260"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="261"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="262"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="263"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="264"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="265"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="266"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="267"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="268"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="269"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="270"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="271"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="272"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="273"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="274"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="275"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="276"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="277"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="278"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="279"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="280"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="281"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="282"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="283"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="284"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="285"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="286"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="287"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="288"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="289"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="290"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="291"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="292"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="293"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="294"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="295"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="296"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="297"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="298"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="299"> 
+         <double>1.0</double> 
+        </void> 
+       </array> 
+      </void> 
+      <void property="c2"> 
+       <array class="double" length="300"> 
+        <void index="0"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="1"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="2"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="3"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="4"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="5"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="6"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="7"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="8"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="9"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="10"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="11"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="12"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="13"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="14"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="15"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="16"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="17"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="18"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="19"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="20"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="21"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="22"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="23"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="24"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="25"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="26"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="27"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="28"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="29"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="30"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="31"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="32"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="33"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="34"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="35"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="36"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="37"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="38"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="39"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="40"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="41"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="42"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="43"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="44"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="45"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="46"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="47"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="48"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="49"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="50"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="51"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="52"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="53"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="54"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="55"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="56"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="57"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="58"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="59"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="60"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="61"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="62"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="63"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="64"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="65"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="66"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="67"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="68"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="69"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="70"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="71"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="72"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="73"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="74"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="75"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="76"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="77"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="78"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="79"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="80"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="81"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="82"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="83"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="84"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="85"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="86"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="87"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="88"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="89"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="90"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="91"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="92"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="93"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="94"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="95"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="96"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="97"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="98"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="99"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="100"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="101"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="102"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="103"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="104"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="105"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="106"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="107"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="108"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="109"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="110"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="111"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="112"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="113"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="114"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="115"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="116"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="117"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="118"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="119"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="120"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="121"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="122"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="123"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="124"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="125"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="126"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="127"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="128"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="129"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="130"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="131"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="132"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="133"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="134"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="135"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="136"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="137"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="138"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="139"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="140"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="141"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="142"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="143"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="144"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="145"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="146"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="147"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="148"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="149"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="150"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="151"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="152"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="153"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="154"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="155"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="156"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="157"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="158"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="159"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="160"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="161"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="162"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="163"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="164"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="165"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="166"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="167"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="168"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="169"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="170"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="171"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="172"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="173"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="174"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="175"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="176"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="177"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="178"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="179"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="180"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="181"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="182"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="183"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="184"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="185"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="186"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="187"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="188"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="189"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="190"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="191"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="192"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="193"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="194"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="195"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="196"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="197"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="198"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="199"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="200"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="201"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="202"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="203"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="204"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="205"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="206"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="207"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="208"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="209"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="210"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="211"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="212"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="213"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="214"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="215"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="216"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="217"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="218"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="219"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="220"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="221"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="222"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="223"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="224"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="225"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="226"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="227"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="228"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="229"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="230"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="231"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="232"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="233"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="234"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="235"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="236"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="237"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="238"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="239"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="240"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="241"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="242"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="243"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="244"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="245"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="246"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="247"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="248"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="249"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="250"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="251"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="252"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="253"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="254"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="255"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="256"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="257"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="258"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="259"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="260"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="261"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="262"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="263"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="264"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="265"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="266"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="267"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="268"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="269"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="270"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="271"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="272"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="273"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="274"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="275"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="276"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="277"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="278"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="279"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="280"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="281"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="282"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="283"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="284"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="285"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="286"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="287"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="288"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="289"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="290"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="291"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="292"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="293"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="294"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="295"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="296"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="297"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="298"> 
+         <double>1.0</double> 
+        </void> 
+        <void index="299"> 
+         <double>1.0</double> 
+        </void> 
+       </array> 
+      </void> 
+      <void property="name"> 
+       <string>ritiro</string> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="conci"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object id="Concio0" class="cassone.model.Concio"> 
+      <void property="bi"> 
+       <double>800.0</double> 
+      </void> 
+      <void property="hw"> 
+       <double>2690.0</double> 
+      </void> 
+      <void property="ti"> 
+       <double>30.0</double> 
+      </void> 
+      <void property="ts"> 
+       <double>30.0</double> 
+      </void> 
+      <void property="tw"> 
+       <double>14.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="Concio1" class="cassone.model.Concio"> 
+      <void property="bi"> 
+       <double>900.0</double> 
+      </void> 
+      <void property="bs"> 
+       <double>800.0</double> 
+      </void> 
+      <void property="hw"> 
+       <double>2670.0</double> 
+      </void> 
+      <void property="name"> 
+       <string>C2</string> 
+      </void> 
+      <void property="tw"> 
+       <double>20.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object id="Concio2" class="cassone.model.Concio"> 
+      <void property="bi"> 
+       <double>800.0</double> 
+      </void> 
+      <void property="hw"> 
+       <double>2685.0</double> 
+      </void> 
+      <void property="name"> 
+       <string>C3</string> 
+      </void> 
+      <void property="ts"> 
+       <double>25.0</double> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="currentSezioneAnalisi"> 
+   <object id="Sezione0" class="cassone.model.Sezione"> 
+    <void property="NCampata"> 
+     <int>1</int> 
+    </void> 
+    <void property="b"> 
+     <double>4680.0</double> 
+    </void> 
+    <void property="b1"> 
+     <double>2455.0</double> 
+    </void> 
+    <void property="b2"> 
+     <double>1775.0</double> 
+    </void> 
+    <void property="bo"> 
+     <double>450.0</double> 
+    </void> 
+    <void property="calcolaArmatura"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="calcoloAutomaticoBeff"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="concio"> 
+     <object idref="Concio0"/> 
+    </void> 
+    <void property="diametroArmatura"> 
+     <double>16.0</double> 
+    </void> 
+    <void property="h"> 
+     <double>260.0</double> 
+    </void> 
+    <void property="irrigidimentiLong"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="irrigidimetoTrasversale"> 
+     <object class="cassone.model.IrrigidimentoTrasversale"/> 
+    </void> 
+    <void property="name"> 
+     <string>SA4</string> 
+    </void> 
+    <void property="parametriOut"> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="a"> 
+        <double>79660.0</double> 
+       </void> 
+       <void property="j"> 
+        <double>9.955977137538705E10</double> 
+       </void> 
+       <void property="jw"> 
+        <double>1.5060453333333334E7</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="a"> 
+        <double>148137.6594810807</double> 
+       </void> 
+       <void property="j"> 
+        <double>1.9503857048795776E11</double> 
+       </void> 
+       <void property="jw"> 
+        <double>6.805594824329269E8</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="a"> 
+        <double>282212.5554588893</double> 
+       </void> 
+       <void property="j"> 
+        <double>2.483778195347348E11</double> 
+       </void> 
+       <void property="jw"> 
+        <double>2.191136643722481E9</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="a"> 
+        <double>162815.15286148668</double> 
+       </void> 
+       <void property="j"> 
+        <double>2.0509915554387894E11</double> 
+       </void> 
+       <void property="jw"> 
+        <double>8.459259078455533E8</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="a"> 
+        <double>1305869.698316032</double> 
+       </void> 
+       <void property="j"> 
+        <double>2.996878770273739E11</double> 
+       </void> 
+       <void property="jw"> 
+        <double>1.3724340452784962E10</double> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+    <void property="passoArmatura"> 
+     <double>10.0</double> 
+    </void> 
+    <void property="sezioneAnalisiGlobale"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="sollecitazioni"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="currentSezioneVerifica"> 
+   <object id="Sezione1" class="cassone.model.Sezione"> 
+    <void property="NCampata"> 
+     <int>1</int> 
+    </void> 
+    <void property="b"> 
+     <double>4000.0</double> 
+    </void> 
+    <void property="b1"> 
+     <double>2455.0</double> 
+    </void> 
+    <void property="b2"> 
+     <double>1775.0</double> 
+    </void> 
+    <void property="bo"> 
+     <double>450.0</double> 
+    </void> 
+    <void property="calcolaArmatura"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="calcoloAutomaticoBeff"> 
+     <boolean>true</boolean> 
+    </void> 
+    <void property="concio"> 
+     <object idref="Concio1"/> 
+    </void> 
+    <void property="diametroArmatura"> 
+     <double>20.0</double> 
+    </void> 
+    <void property="giunto"> 
+     <object class="cassone.model.GiuntoBullonato"> 
+      <void property="e2bInf"> 
+       <double>140.0</double> 
+      </void> 
+      <void property="e2bSup"> 
+       <double>140.0</double> 
+      </void> 
+      <void property="nfile1Inf"> 
+       <int>8</int> 
+      </void> 
+      <void property="nfile1Sup"> 
+       <int>6</int> 
+      </void> 
+      <void property="nfile2Inf"> 
+       <int>5</int> 
+      </void> 
+      <void property="nfile2Sup"> 
+       <int>3</int> 
+      </void> 
+      <void property="nfile2W"> 
+       <int>30</int> 
+      </void> 
+      <void property="p1Inf"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="p1Sup"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="p1W"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="p2Inf"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="p2Sup"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="p2W"> 
+       <double>80.0</double> 
+      </void> 
+      <void property="tgSup"> 
+       <double>10.0</double> 
+      </void> 
+      <void property="tgW"> 
+       <double>10.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void property="h"> 
+     <double>260.0</double> 
+    </void> 
+    <void property="irrigidimentiLong"> 
+     <object class="java.util.ArrayList"/> 
+    </void> 
+    <void property="irrigidimetoTrasversale"> 
+     <object class="cassone.model.IrrigidimentoTrasversale"/> 
+    </void> 
+    <void property="name"> 
+     <string>SV1</string> 
+    </void> 
+    <void property="parametriOut"> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="VPioli"> 
+        <double>826.7022132602407</double> 
+       </void> 
+       <void property="bef1"> 
+        <double>2129.9961351961038</double> 
+       </void> 
+       <void property="bef2"> 
+        <double>410.95261316458084</double> 
+       </void> 
+       <void property="bired"> 
+        <double>900.0</double> 
+       </void> 
+       <void property="bsred"> 
+        <double>800.0</double> 
+       </void> 
+       <void property="i"> 
+        <double>202.49784059715068</double> 
+       </void> 
+       <void property="ii"> 
+        <double>209.50206404368026</double> 
+       </void> 
+       <void property="iired"> 
+        <double>210.7968001734685</double> 
+       </void> 
+       <void property="nu1"> 
+        <double>0.7663050645217786</double> 
+       </void> 
+       <void property="nu2"> 
+        <double>0.32620666411204646</double> 
+       </void> 
+       <void property="nuInterM_V"> 
+        <double>0.6160411445901018</double> 
+       </void> 
+       <void property="s"> 
+        <double>-265.0340744587018</double> 
+       </void> 
+       <void property="sf"> 
+        <double>-294.8020241064527</double> 
+       </void> 
+       <void property="sid1"> 
+        <double>227.47652405278942</double> 
+       </void> 
+       <void property="sid2"> 
+        <double>289.22910843425535</double> 
+       </void> 
+       <void property="ss"> 
+        <double>-272.0382979052314</double> 
+       </void> 
+       <void property="ss1red"> 
+        <double>109.76242969219973</double> 
+       </void> 
+       <void property="ss2red"> 
+        <double>132.24264536042892</double> 
+       </void> 
+       <void property="ssred"> 
+        <double>-268.24228160477185</double> 
+       </void> 
+       <void property="ti"> 
+        <double>59.83364033894377</double> 
+       </void> 
+       <void property="ts"> 
+        <double>66.85909696641525</double> 
+       </void> 
+       <void property="vbRd"> 
+        <double>7084109.024129933</double> 
+       </void> 
+       <void property="ved"> 
+        <double>4216500.0</double> 
+       </void> 
+      </object> 
+     </void> 
+     <void method="add"> 
+      <object class="cassone.model.ParametriStaticiSezione"> 
+       <void property="VPioli"> 
+        <double>826.7022132602407</double> 
+       </void> 
+       <void property="bef1"> 
+        <double>1659.9807152391086</double> 
+       </void> 
+       <void property="bef2"> 
+        <double>408.4373363615383</double> 
+       </void> 
+       <void property="bired"> 
+        <double>900.0</double> 
+       </void> 
+       <void property="bsred"> 
+        <double>800.0</double> 
+       </void> 
+       <void property="i"> 
+        <double>294.84441553036163</double> 
+       </void> 
+       <void property="ii"> 
+        <double>302.11252190935187</double> 
+       </void> 
+       <void property="iired"> 
+        <double>329.0232712222502</double> 
+       </void> 
+       <void property="nu1"> 
+        <double>0.8510211884770476</double> 
+       </void> 
+       <void property="nu2"> 
+        <double>0.32620666411204646</double> 
+       </void> 
+       <void property="nuInterM_V"> 
+        <double>0.6523529060611856</double> 
+       </void> 
+       <void property="s"> 
+        <double>-190.30168526723912</double> 
+       </void> 
+       <void property="sf"> 
+        <double>-221.19113737794777</double> 
+       </void> 
+       <void property="sid1"> 
+        <double>312.52747546107173</double> 
+       </void> 
+       <void property="sid2"> 
+        <double>222.76702618889738</double> 
+       </void> 
+       <void property="ss"> 
+        <double>-197.56979164622942</double> 
+       </void> 
+       <void property="ss1red"> 
+        <double>131.75673528510174</double> 
+       </void> 
+       <void property="ss2red"> 
+        <double>244.77559957204153</double> 
+       </void> 
+       <void property="ssred"> 
+        <double>-187.61769118701784</double> 
+       </void> 
+       <void property="ti"> 
+        <double>59.83364033894377</double> 
+       </void> 
+       <void property="ts"> 
+        <double>66.85909696641525</double> 
+       </void> 
+       <void property="vbRd"> 
+        <double>6920635.03863566</double> 
+       </void> 
+       <void property="ved"> 
+        <double>4216500.0</double> 
+       </void> 
+      </object> 
+     </void> 
+    </void> 
+    <void property="passoArmatura"> 
+     <double>5.0</double> 
+    </void> 
+    <void property="sollecitazioni"> 
+     <object class="java.util.ArrayList"> 
+      <void method="add"> 
+       <object class="cassone.model.Sollecitazioni"> 
+        <void property="cond"> 
+         <object id="CondizioniCarico0" class="cassone.model.CondizioniCarico"> 
+          <void property="nome"> 
+           <string>peso proprio</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="m"> 
+         <double>-8872.0</double> 
+        </void> 
+        <void property="n"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="sigCls"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="v"> 
+         <double>1099.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="cassone.model.Sollecitazioni"> 
+        <void property="cond"> 
+         <object id="CondizioniCarico1" class="cassone.model.CondizioniCarico"> 
+          <void property="n"> 
+           <int>1</int> 
+          </void> 
+          <void property="nome"> 
+           <string>permanenti</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="m"> 
+         <double>-5562.0</double> 
+        </void> 
+        <void property="n"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="sigCls"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="v"> 
+         <double>750.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="cassone.model.Sollecitazioni"> 
+        <void property="cond"> 
+         <object id="CondizioniCarico2" class="cassone.model.CondizioniCarico"> 
+          <void property="n"> 
+           <int>2</int> 
+          </void> 
+          <void property="nome"> 
+           <string>DT</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="m"> 
+         <double>619.0</double> 
+        </void> 
+        <void property="n"> 
+         <double>-6364.0</double> 
+        </void> 
+        <void property="sigCls"> 
+         <double>4.0</double> 
+        </void> 
+        <void property="v"> 
+         <double>0.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="cassone.model.Sollecitazioni"> 
+        <void property="cond"> 
+         <object id="CondizioniCarico3" class="cassone.model.CondizioniCarico"> 
+          <void property="n"> 
+           <int>2</int> 
+          </void> 
+          <void property="nome"> 
+           <string>mobili</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="m"> 
+         <double>-7722.0</double> 
+        </void> 
+        <void property="n"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="sigCls"> 
+         <double>0.0</double> 
+        </void> 
+        <void property="v"> 
+         <double>962.0</double> 
+        </void> 
+       </object> 
+      </void> 
+      <void method="add"> 
+       <object class="cassone.model.Sollecitazioni"> 
+        <void property="cond"> 
+         <object id="CondizioniCarico4" class="cassone.model.CondizioniCarico"> 
+          <void property="n"> 
+           <int>3</int> 
+          </void> 
+          <void property="nome"> 
+           <string>ritiro</string> 
+          </void> 
+         </object> 
+        </void> 
+        <void property="m"> 
+         <double>-553.0</double> 
+        </void> 
+        <void property="n"> 
+         <double>3921.0</double> 
+        </void> 
+        <void property="sigCls"> 
+         <double>-3.0</double> 
+        </void> 
+        <void property="v"> 
+         <double>0.0</double> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="materiale"> 
+   <object id="MaterialeAcciaio0" class="cassone.model.MaterialeAcciaio"> 
+    <void property="fu1"> 
+     <double>510.0</double> 
+    </void> 
+    <void property="fu2"> 
+     <double>490.0</double> 
+    </void> 
+    <void property="fy1"> 
+     <double>355.0</double> 
+    </void> 
+    <void property="fy2"> 
+     <double>335.0</double> 
+    </void> 
+    <void property="gamma0"> 
+     <double>1.0</double> 
+    </void> 
+    <void property="gamma1"> 
+     <double>1.1</double> 
+    </void> 
+    <void property="gamma2"> 
+     <double>1.25</double> 
+    </void> 
+    <void property="nome"> 
+     <string>S355</string> 
+    </void> 
+    <void property="nutaglio"> 
+     <double>1.2</double> 
+    </void> 
+    <void property="sp1"> 
+     <double>40.0</double> 
+    </void> 
+    <void property="sp2"> 
+     <double>100.0</double> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="materiali"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="cassone.model.MaterialeAcciaio"> 
+      <void property="fu1"> 
+       <double>360.0</double> 
+      </void> 
+      <void property="fu2"> 
+       <double>340.0</double> 
+      </void> 
+      <void property="fy1"> 
+       <double>235.0</double> 
+      </void> 
+      <void property="fy2"> 
+       <double>215.0</double> 
+      </void> 
+      <void property="gamma0"> 
+       <double>1.0</double> 
+      </void> 
+      <void property="gamma1"> 
+       <double>1.1</double> 
+      </void> 
+      <void property="gamma2"> 
+       <double>1.25</double> 
+      </void> 
+      <void property="nome"> 
+       <string>S235</string> 
+      </void> 
+      <void property="nutaglio"> 
+       <double>1.2</double> 
+      </void> 
+      <void property="sp1"> 
+       <double>40.0</double> 
+      </void> 
+      <void property="sp2"> 
+       <double>100.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="cassone.model.MaterialeAcciaio"> 
+      <void property="fu1"> 
+       <double>430.0</double> 
+      </void> 
+      <void property="fu2"> 
+       <double>410.0</double> 
+      </void> 
+      <void property="fy1"> 
+       <double>275.0</double> 
+      </void> 
+      <void property="fy2"> 
+       <double>255.0</double> 
+      </void> 
+      <void property="gamma0"> 
+       <double>1.0</double> 
+      </void> 
+      <void property="gamma1"> 
+       <double>1.1</double> 
+      </void> 
+      <void property="gamma2"> 
+       <double>1.25</double> 
+      </void> 
+      <void property="nome"> 
+       <string>S275</string> 
+      </void> 
+      <void property="nutaglio"> 
+       <double>1.2</double> 
+      </void> 
+      <void property="sp1"> 
+       <double>40.0</double> 
+      </void> 
+      <void property="sp2"> 
+       <double>100.0</double> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object idref="MaterialeAcciaio0"/> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="n"> 
+   <array class="double" length="4"> 
+    <void index="0"> 
+     <double>20.6</double> 
+    </void> 
+    <void index="1"> 
+     <double>6.3</double> 
+    </void> 
+    <void index="2"> 
+     <double>16.5</double> 
+    </void> 
+    <void index="3"> 
+     <double>1.0</double> 
+    </void> 
+   </array> 
+  </void> 
+  <void property="nomeProgetto"> 
+   <string>ESEMPIO 1</string> 
+  </void> 
+  <void property="sezioniAnalisiGlobale"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object class="cassone.model.Sezione"> 
+      <void property="b"> 
+       <double>4680.0</double> 
+      </void> 
+      <void property="b1"> 
+       <double>2455.0</double> 
+      </void> 
+      <void property="b2"> 
+       <double>1775.0</double> 
+      </void> 
+      <void property="bo"> 
+       <double>450.0</double> 
+      </void> 
+      <void property="calcolaArmatura"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="calcoloAutomaticoBeff"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="concio"> 
+       <object idref="Concio0"/> 
+      </void> 
+      <void property="diametroArmatura"> 
+       <double>16.0</double> 
+      </void> 
+      <void property="h"> 
+       <double>260.0</double> 
+      </void> 
+      <void property="irrigidimentiLong"> 
+       <object class="java.util.ArrayList"> 
+        <void method="add"> 
+         <object class="cassone.model.IrrigidimentoLongitudinale"> 
+          <void property="p1"> 
+           <void property="y"> 
+            <double>1040.0</double> 
+           </void> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="cassone.model.IrrigidimentoLongitudinale"> 
+          <void property="p1"> 
+           <void property="y"> 
+            <double>1540.0</double> 
+           </void> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+      <void property="irrigidimetoTrasversale"> 
+       <object class="cassone.model.IrrigidimentoTrasversale"/> 
+      </void> 
+      <void property="name"> 
+       <string>SA1</string> 
+      </void> 
+      <void property="parametriOut"> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>79660.0</double> 
+         </void> 
+         <void property="j"> 
+          <double>9.955977137538705E10</double> 
+         </void> 
+         <void property="jw"> 
+          <double>1.5060453333333334E7</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>148137.6594810807</double> 
+         </void> 
+         <void property="j"> 
+          <double>1.9503857048795776E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>6.805594824329269E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>282212.5554588893</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.483778195347348E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>2.191136643722481E9</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>162815.15286148668</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.0509915554387894E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>8.459259078455533E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>1305869.698316032</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.996878770273739E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>1.3724340452784962E10</double> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+      <void property="passoArmatura"> 
+       <double>10.0</double> 
+      </void> 
+      <void property="sezioneAnalisiGlobale"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="sollecitazioni"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="cassone.model.Sezione"> 
+      <void property="b"> 
+       <double>4680.0</double> 
+      </void> 
+      <void property="b1"> 
+       <double>2455.0</double> 
+      </void> 
+      <void property="b2"> 
+       <double>1775.0</double> 
+      </void> 
+      <void property="bo"> 
+       <double>450.0</double> 
+      </void> 
+      <void property="calcolaArmatura"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="calcoloAutomaticoBeff"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="concio"> 
+       <object idref="Concio1"/> 
+      </void> 
+      <void property="diametroArmatura"> 
+       <double>20.0</double> 
+      </void> 
+      <void property="h"> 
+       <double>260.0</double> 
+      </void> 
+      <void property="irrigidimentiLong"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+      <void property="irrigidimetoTrasversale"> 
+       <object class="cassone.model.IrrigidimentoTrasversale"/> 
+      </void> 
+      <void property="name"> 
+       <string>SA2</string> 
+      </void> 
+      <void property="parametriOut"> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>121400.0</double> 
+         </void> 
+         <void property="j"> 
+          <double>1.5634039143602417E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>4.3386666666666664E7</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>209873.268402649</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.795693591106753E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>7.088856957662601E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>343948.1643804576</double> 
+         </void> 
+         <void property="j"> 
+          <double>3.460600926130656E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>2.219462857055814E9</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>224550.761783055</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.906746029063936E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>8.742521211788865E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>1367605.3072376004</double> 
+         </void> 
+         <void property="j"> 
+          <double>4.288466046771242E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>1.3752666666118294E10</double> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+      <void property="passoArmatura"> 
+       <double>5.0</double> 
+      </void> 
+      <void property="sezioneAnalisiGlobale"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="sollecitazioni"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object class="cassone.model.Sezione"> 
+      <void property="NCampata"> 
+       <int>1</int> 
+      </void> 
+      <void property="b"> 
+       <double>4680.0</double> 
+      </void> 
+      <void property="b1"> 
+       <double>2455.0</double> 
+      </void> 
+      <void property="b2"> 
+       <double>1775.0</double> 
+      </void> 
+      <void property="bo"> 
+       <double>450.0</double> 
+      </void> 
+      <void property="calcolaArmatura"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="calcoloAutomaticoBeff"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="concio"> 
+       <object idref="Concio1"/> 
+      </void> 
+      <void property="diametroArmatura"> 
+       <double>20.0</double> 
+      </void> 
+      <void property="h"> 
+       <double>260.0</double> 
+      </void> 
+      <void property="irrigidimentiLong"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+      <void property="irrigidimetoTrasversale"> 
+       <object class="cassone.model.IrrigidimentoTrasversale"/> 
+      </void> 
+      <void property="name"> 
+       <string>SA3</string> 
+      </void> 
+      <void property="parametriOut"> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>121400.0</double> 
+         </void> 
+         <void property="j"> 
+          <double>1.5634039143602417E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>4.3386666666666664E7</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>209873.268402649</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.795693591106753E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>7.088856957662601E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>343948.1643804576</double> 
+         </void> 
+         <void property="j"> 
+          <double>3.460600926130656E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>2.219462857055814E9</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>224550.761783055</double> 
+         </void> 
+         <void property="j"> 
+          <double>2.906746029063936E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>8.742521211788865E8</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="a"> 
+          <double>1367605.3072376004</double> 
+         </void> 
+         <void property="j"> 
+          <double>4.288466046771242E11</double> 
+         </void> 
+         <void property="jw"> 
+          <double>1.3752666666118294E10</double> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+      <void property="passoArmatura"> 
+       <double>5.0</double> 
+      </void> 
+      <void property="sezioneAnalisiGlobale"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="sollecitazioni"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+     </object> 
+    </void> 
+    <void method="add"> 
+     <object idref="Sezione0"/> 
+    </void> 
+   </object> 
+  </void> 
+  <void property="sezioniVerifica"> 
+   <object class="java.util.ArrayList"> 
+    <void method="add"> 
+     <object idref="Sezione1"/> 
+    </void> 
+    <void method="add"> 
+     <object class="cassone.model.Sezione"> 
+      <void property="NCampata"> 
+       <int>1</int> 
+      </void> 
+      <void property="XSezione"> 
+       <double>25.0</double> 
+      </void> 
+      <void property="b"> 
+       <double>4000.0</double> 
+      </void> 
+      <void property="b1"> 
+       <double>2455.0</double> 
+      </void> 
+      <void property="b2"> 
+       <double>1775.0</double> 
+      </void> 
+      <void property="bo"> 
+       <double>450.0</double> 
+      </void> 
+      <void property="calcolaArmatura"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="calcoloAutomaticoBeff"> 
+       <boolean>true</boolean> 
+      </void> 
+      <void property="concio"> 
+       <object idref="Concio2"/> 
+      </void> 
+      <void property="diametroArmatura"> 
+       <double>16.0</double> 
+      </void> 
+      <void property="h"> 
+       <double>260.0</double> 
+      </void> 
+      <void property="irrigidimentiLong"> 
+       <object class="java.util.ArrayList"/> 
+      </void> 
+      <void property="irrigidimetoTrasversale"> 
+       <object class="cassone.model.IrrigidimentoTrasversale"/> 
+      </void> 
+      <void property="name"> 
+       <string>SV2</string> 
+      </void> 
+      <void property="parametriOut"> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="bef1"> 
+          <double>175.29767860700719</double> 
+         </void> 
+         <void property="bef2"> 
+          <double>2002.141452887223</double> 
+         </void> 
+         <void property="bired"> 
+          <double>800.0</double> 
+         </void> 
+         <void property="bsred"> 
+          <double>600.0</double> 
+         </void> 
+         <void property="i"> 
+          <double>-232.69961805535502</double> 
+         </void> 
+         <void property="ii"> 
+          <double>-238.0515107817094</double> 
+         </void> 
+         <void property="iired"> 
+          <double>-235.2954507835921</double> 
+         </void> 
+         <void property="nu1"> 
+          <double>0.6705676360048152</double> 
+         </void> 
+         <void property="nuInterM_V"> 
+          <double>0.9118584093105286</double> 
+         </void> 
+         <void property="s"> 
+          <double>126.54618120118101</double> 
+         </void> 
+         <void property="sc"> 
+          <double>4.908124753315094</double> 
+         </void> 
+         <void property="sf"> 
+          <double>147.28476551580414</double> 
+         </void> 
+         <void property="sid1"> 
+          <double>232.69961805535502</double> 
+         </void> 
+         <void property="sid2"> 
+          <double>126.54618120118101</double> 
+         </void> 
+         <void property="ss"> 
+          <double>129.89111415515248</double> 
+         </void> 
+         <void property="ss1red"> 
+          <double>113.23811326854675</double> 
+         </void> 
+         <void property="ss2red"> 
+          <double>43.85668117373379</double> 
+         </void> 
+         <void property="ssred"> 
+          <double>140.61796197109257</double> 
+         </void> 
+         <void property="vbRd"> 
+          <double>1176120.061286751</double> 
+         </void> 
+        </object> 
+       </void> 
+       <void method="add"> 
+        <object class="cassone.model.ParametriStaticiSezione"> 
+         <void property="bef1"> 
+          <double>173.27857801828912</double> 
+         </void> 
+         <void property="bef2"> 
+          <double>1516.1571946903273</double> 
+         </void> 
+         <void property="bired"> 
+          <double>800.0</double> 
+         </void> 
+         <void property="bsred"> 
+          <double>600.0</double> 
+         </void> 
+         <void property="i"> 
+          <double>-160.7667204339521</double> 
+         </void> 
+         <void property="ii"> 
+          <double>-165.885704273856</double> 
+         </void> 
+         <void property="iired"> 
+          <double>-161.05637218060744</double> 
+         </void> 
+         <void property="nu1"> 
+          <double>0.5240688301958779</double> 
+         </void> 
+         <void property="nuInterM_V"> 
+          <double>0.890100734756615</double> 
+         </void> 
+         <void property="s"> 
+          <double>182.84506981959674</double> 
+         </void> 
+         <void property="sc"> 
+          <double>2.4214705898208275</double> 
+         </void> 
+         <void property="sf"> 
+          <double>202.68113219922435</double> 
+         </void> 
+         <void property="sid1"> 
+          <double>160.7667204339521</double> 
+         </void> 
+         <void property="sid2"> 
+          <double>182.84506981959674</double> 
+         </void> 
+         <void property="ss"> 
+          <double>186.04443471953667</double> 
+         </void> 
+         <void property="ss1red"> 
+          <double>191.38210633801944</double> 
+         </void> 
+         <void property="ss2red"> 
+          <double>53.87683694946213</double> 
+         </void> 
+         <void property="ssred"> 
+          <double>218.7679329245799</double> 
+         </void> 
+         <void property="vbRd"> 
+          <double>1190419.2063393155</double> 
+         </void> 
+        </object> 
+       </void> 
+      </void> 
+      <void property="passoArmatura"> 
+       <double>10.0</double> 
+      </void> 
+      <void property="sollecitazioni"> 
+       <object class="java.util.ArrayList"> 
+        <void method="add"> 
+         <object class="cassone.model.Sollecitazioni"> 
+          <void property="cond"> 
+           <object idref="CondizioniCarico0"/> 
+          </void> 
+          <void property="m"> 
+           <double>4638.0</double> 
+          </void> 
+          <void property="n"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="sigCls"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="v"> 
+           <double>0.0</double> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="cassone.model.Sollecitazioni"> 
+          <void property="cond"> 
+           <object idref="CondizioniCarico1"/> 
+          </void> 
+          <void property="m"> 
+           <double>2881.0</double> 
+          </void> 
+          <void property="n"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="sigCls"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="v"> 
+           <double>0.0</double> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="cassone.model.Sollecitazioni"> 
+          <void property="cond"> 
+           <object idref="CondizioniCarico2"/> 
+          </void> 
+          <void property="m"> 
+           <double>619.0</double> 
+          </void> 
+          <void property="n"> 
+           <double>-6364.0</double> 
+          </void> 
+          <void property="sigCls"> 
+           <double>4.0</double> 
+          </void> 
+          <void property="v"> 
+           <double>0.0</double> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="cassone.model.Sollecitazioni"> 
+          <void property="cond"> 
+           <object idref="CondizioniCarico3"/> 
+          </void> 
+          <void property="m"> 
+           <double>6122.0</double> 
+          </void> 
+          <void property="n"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="sigCls"> 
+           <double>0.0</double> 
+          </void> 
+          <void property="v"> 
+           <double>0.0</double> 
+          </void> 
+         </object> 
+        </void> 
+        <void method="add"> 
+         <object class="cassone.model.Sollecitazioni"> 
+          <void property="cond"> 
+           <object idref="CondizioniCarico4"/> 
+          </void> 
+          <void property="m"> 
+           <double>-553.0</double> 
+          </void> 
+          <void property="n"> 
+           <double>3921.0</double> 
+          </void> 
+          <void property="sigCls"> 
+           <double>-3.0</double> 
+          </void> 
+          <void property="v"> 
+           <double>0.0</double> 
+          </void> 
+         </object> 
+        </void> 
+       </object> 
+      </void> 
+     </object> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 

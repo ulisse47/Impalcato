@@ -1,0 +1,29 @@
+  I valori delle tensioni sono riportati di seguito con il seguente
+  significato dei simboli:
+
+  sxy1 = tensione normale parallela all'asse impalcato nel punto 1
+  sa   = tensione normale nell'armatura soletta
+  sxy3 = tensione normale parallela all'asse impalcato nel punto 3
+  sxy4 = tensione normale parallela all'asse impalcato nel punto 4
+  sxy5 = tensione normale parallela all'asse impalcato nel punto 5
+  sxy6 = tensione normale parallela all'asse impalcato nel punto 6
+  tms  = tensione tangenziale da torsione nella soletta
+  t4i  = tensione tangenziale risultante al punto 4 interno curva
+  t4e  = tensione tangenziale risultante al punto 4 esterno curva
+  ti   = tensione tangenziale risultante al baricentro interno curva
+  te   = tensione tangenziale risultante al baricentro esterno curva
+  t5i  = tensione tangenziale risultante al punto 5 interno curva
+  t5e  = tensione tangenziale risultante al punto 5 esterno curva
+  t6e  = tensione tangenziale risultante al punto 6 esterno curva
+  Fsi  = forza totale di scorrimento al punto 1 interno curva
+  Fse  = forza totale di scorrimento al punto 1 esterno curva
+  Sigma-c  = tensione principale minore nel calcestruzzo al punto 1
+  Sigma-a  = tensione normale totale nell'armatura soletta
+  Sigma-3  = tensione ideale nel punto 3
+  Sigma-i4 = tensione ideale nel punto 4 interno curva
+  Sigma-e4 = tensione ideale nel punto 4 esterno curva
+  Sigma-i5 = tensione ideale nel punto 5 interno curva
+  Sigma-e5 = tensione ideale nel punto 5 esterno curva
+  Sigma-6  = tensione ideale nel punto 6 interno curva
+  Sigma-im = tensione ideale al baricentro interno curva
+  Sigma-em = tensione ideale al baricentro esterno curva
